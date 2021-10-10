@@ -9,6 +9,10 @@ def render():
 def productos():
    return render_template('productos.html')
 
+@app.route('/micuenta')
+def productos():
+   return render_template('productos.html')
+
 
 
 app.run() #se encarga de ejecutar el servidor 5000
