@@ -10,7 +10,7 @@ def render():
 def productos():
    return render_template('productos.html')
 
-@app.route('/micuenta')
+@app.route('/login')
 def micuenta():
    return render_template('login.html')
 
