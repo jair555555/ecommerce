@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="es-CO">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -8,158 +9,183 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Registro</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Registro.css" media="screen">
+    <link rel="stylesheet" href="Registro.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.27.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "WebSite818718",
-		"logo": "images/default-logo.png",
-		"sameAs": []
-}</script>
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "WebSite818718",
+            "logo": "images/default-logo.png",
+            "sameAs": []
+        }
+    </script>
     <meta name="theme-color" content="#4a53e0">
     <meta property="og:title" content="Registro">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
-     <script>
-      function onClick(e) {
-        e.preventDefault();
-        grecaptcha.ready(function() {
-          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
-              // Add your logic to submit to your backend server here.
-          });
-        });
-      }
-  </script><script src="https://www.google.com/recaptcha/api.js?render=6LeLIb4cAAAAAJpQ2ndOZjXyKzAwUlixz1nFCdEE"></script>
     <script>
-( function( grecaptcha, sitekey, actions ) {
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.ready(function() {
+                grecaptcha.execute('reCAPTCHA_site_key', {
+                    action: 'submit'
+                }).then(function(token) {
+                    // Add your logic to submit to your backend server here.
+                });
+            });
+        }
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeLIb4cAAAAAJpQ2ndOZjXyKzAwUlixz1nFCdEE"></script>
+    <script>
+        (function(grecaptcha, sitekey, actions) {
 
-	var recaptcha = {
+            var recaptcha = {
 
-		execute: function( action ) {
-			grecaptcha.execute(
-				sitekey,
-				{ action: action }
-			).then( function( token ) {
-				var forms = document.getElementsByTagName( 'form' );
+                execute: function(action) {
+                    grecaptcha.execute(
+                        sitekey, {
+                            action: action
+                        }
+                    ).then(function(token) {
+                        var forms = document.getElementsByTagName('form');
 
-				for ( var i = 0; i < forms.length; i++ ) {
-					var fields = forms[ i ].getElementsByTagName( 'input' );
+                        for (var i = 0; i < forms.length; i++) {
+                            var fields = forms[i].getElementsByTagName('input');
 
-					for ( var j = 0; j < fields.length; j++ ) {
-						var field = fields[ j ];
+                            for (var j = 0; j < fields.length; j++) {
+                                var field = fields[j];
 
-						if ( 'recaptchaResponse' === field.getAttribute( 'name' ) ) {
-							field.setAttribute( 'value', token );
-							break;
-						}
-					}
-				}
-			} );
-		},
+                                if ('recaptchaResponse' === field.getAttribute('name')) {
+                                    field.setAttribute('value', token);
+                                    break;
+                                }
+                            }
+                        }
+                    });
+                },
 
-		executeContact: function() {
-			recaptcha.execute( actions[ 'contact' ] );
-		}
-	};
+                executeContact: function() {
+                    recaptcha.execute(actions['contact']);
+                }
+            };
 
-	grecaptcha.ready(
-		recaptcha.executeContact
-	);
+            grecaptcha.ready(
+                recaptcha.executeContact
+            );
 
-	document.addEventListener( 'change',
-		recaptcha.executeContact, false
-	);
-} )(
-	grecaptcha,
-	'6LeLIb4cAAAAAJpQ2ndOZjXyKzAwUlixz1nFCdEE',
-	{"contact":"contact"}
-);
+            document.addEventListener('change',
+                recaptcha.executeContact, false
+            );
+        })(
+            grecaptcha,
+            '6LeLIb4cAAAAAJpQ2ndOZjXyKzAwUlixz1nFCdEE', {
+                "contact": "contact"
+            }
+        );
     </script>
 </head>
-  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-7f8f"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1">
-          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 96 96" style=""><use xlink:href="#svg-0a91"></use></svg><svg class="u-svg-content" viewBox="0 0 96 96" id="svg-0a91"><g id="_01-cart"><path d="M95.209,25.7A4,4,0,0,0,92,24.087H32v8H86.624L83.05,44H40v8H80.65L77.024,64.087H31.017l-15.171-53.1a4,4,0,0,0-3.817-2.9L.029,8l-.058,8,9.006.065L24.154,69.186A4,4,0,0,0,28,72.087H38.613a12,12,0,1,0,2.774,0H66.613a12,12,0,1,0,2.774,0H80a4,4,0,0,0,3.832-2.851l12-40A4,4,0,0,0,95.209,25.7ZM44,84a4,4,0,1,1-4-4A4,4,0,0,1,44,84Zm28,0a4,4,0,1,1-4-4A4,4,0,0,1,72,84Z"></path>
+
+<body class="u-body">
+    <header class="u-clearfix u-header u-header" id="sec-7f8f">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+            </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 96 96" style=""><use xlink:href="#svg-0a91"></use></svg><svg class="u-svg-content" viewBox="0 0 96 96" id="svg-0a91"><g id="_01-cart"><path d="M95.209,25.7A4,4,0,0,0,92,24.087H32v8H86.624L83.05,44H40v8H80.65L77.024,64.087H31.017l-15.171-53.1a4,4,0,0,0-3.817-2.9L.029,8l-.058,8,9.006.065L24.154,69.186A4,4,0,0,0,28,72.087H38.613a12,12,0,1,0,2.774,0H66.613a12,12,0,1,0,2.774,0H80a4,4,0,0,0,3.832-2.851l12-40A4,4,0,0,0,95.209,25.7ZM44,84a4,4,0,1,1-4-4A4,4,0,0,1,44,84Zm28,0a4,4,0,1,1-4-4A4,4,0,0,1,72,84Z"></path>
 </g></svg></span><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-2" data-href="/login.html" data-page-id="818745"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xlink:href="#svg-b086"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-b086"><g id="Solid"><path d="m260.52 329.539a24 24 0 0 0 33.941 33.941l90.51-90.51a24 24 0 0 0 0-33.941l-90.51-90.509a24 24 0 0 0 -33.941 0 24 24 0 0 0 0 33.941l49.539 49.539h-262.059a24 24 0 0 0 -24 24 24 24 0 0 0 24 24h262.059z"></path><path d="m448 24h-224a40 40 0 0 0 -40 40v32a24 24 0 0 0 48 0v-24h208v368h-208v-24a24 24 0 0 0 -48 0v32a40 40 0 0 0 40 40h224a40 40 0 0 0 40-40v-384a40 40 0 0 0 -40-40z"></path>
 </g></svg></span>
-        <a class="u-login u-login-1">Login</a>
-        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;" wfd-invisible="true">
-            <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-              <svg><use xlink:href="#menu-hamburger"></use></svg>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+            <a class="u-login u-login-1">Login</a>
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;" wfd-invisible="true">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                        <svg><use xlink:href="#menu-hamburger"></use></svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </symbol>
 </defs></svg>
-            </a>
-          </div>
-          <div class="u-custom-menu u-nav-container" wfd-invisible="true">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 32px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Productos.html" style="padding: 10px 32px;">Productos</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Lista de deseos</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Soporte</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Contactenos</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Mi cuenta</a>
-</li></ul>
-          </div>
-          <div class="u-custom-menu u-nav-container-collapse" wfd-invisible="true">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-              <div class="u-inner-container-layout u-sidenav-overflow">
-                <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 32px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Productos.html" style="padding: 10px 32px;">Productos</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Lista de deseos</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Soporte</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Contactenos</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Mi cuenta</a>
-</li></ul>
-              </div>
-            </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
-          </div>
-        </nav>
-      </div></header>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container" wfd-invisible="true">
+                    <ul class="u-nav u-unstyled u-nav-1">
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 32px;">Home</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Productos.html" style="padding: 10px 32px;">Productos</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Lista de deseos</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Soporte</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Contactenos</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 32px;">Mi cuenta</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse" wfd-invisible="true">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 32px;">Home</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Productos.html" style="padding: 10px 32px;">Productos</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Lista de deseos</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Soporte</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Contactenos</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 32px;">Mi cuenta</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
     <section class="u-clearfix u-grey-10 u-section-1" id="sec-24e2">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-align-center u-expanded-width-xs u-form u-form-1">
-          <form action="https://nicepage.com/editor/Forms/Process" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" source="email" name="form" style="padding: 50px;">
-            <input type="hidden" id="siteId" name="siteId" value="818718">
-            <input type="hidden" id="pageId" name="pageId" value="818790">
-            <div class="u-form-group u-form-name u-form-partition-factor-2 u-form-group-1">
-              <label for="name-41d6" class="u-label u-label-1">Nombre</label>
-              <input type="text" placeholder="Ingrese su nombre" id="name-41d6" name="name-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="">
-            </div>
-            <div class="u-form-group u-form-name u-form-partition-factor-2">
-              <label for="name-0d91" class="u-label u-label-2">Apellido</label>
-              <input type="text" placeholder="Ingrese su Apellido" id="name-0d91" name="Apellido" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-2" required="">
-            </div>
-            <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-3">
-              <label for="date-381f" class="u-label u-label-3">Fechas de nacimiento</label>
-              <input type="date" placeholder="MM/DD/YYYY" id="date-381f" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-3" required="">
-            </div>
-            <div class="u-form-group u-form-partition-factor-2 u-form-radiobutton u-form-group-4">
-              <div class="u-form-radio-button-wrapper">
-                <input type="radio" name="radiobutton" value="Masculino">
-                <label class="u-label" for="radiobutton">Masculino</label>
-                <br>
-                <input type="radio" name="radiobutton" value="Femenino">
-                <label class="u-label" for="radiobutton">Femenino</label>
-                <br>
-              </div>
-            </div>
-            <div class="u-form-email u-form-group">
-              <label for="email-0d91" class="u-label u-label-6">Correo</label>
-              <input type="email" placeholder="Ingrese su correo" id="email-0d91" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-4" required="">
-            </div>
-            <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-6">
-              <label for="select-149a" class="u-label u-label-7">Departamento</label>
-              <div class="u-form-select-wrapper">
-                <select id="select-149a" name="departamento" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-5" autofocus="autofocus">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-center u-expanded-width-xs u-form u-form-1">
+                <form action="https://nicepage.com/editor/Forms/Process" method="POST" class="u-clearfix u-form-spacing-9 u-form-vertical u-inner-form" source="email" name="form" style="padding: 50px;">
+                    <input type="hidden" id="siteId" name="siteId" value="818718">
+                    <input type="hidden" id="pageId" name="pageId" value="818790">
+                    <div class="u-form-group u-form-name u-form-partition-factor-2 u-form-group-1">
+                        <label for="name-41d6" class="u-label u-label-1">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre" id="name-41d6" name="name-1" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-1" required="">
+                    </div>
+                    <div class="u-form-group u-form-name u-form-partition-factor-2">
+                        <label for="name-0d91" class="u-label u-label-2">Apellido</label>
+                        <input type="text" placeholder="Ingrese su Apellido" id="name-0d91" name="Apellido" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-2" required="">
+                    </div>
+                    <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-3">
+                        <label for="date-381f" class="u-label u-label-3">Fecha de nacimiento</label>
+                        <input type="date" placeholder="MM/DD/YYYY" id="date-381f" name="date" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-3" required="">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-radiobutton u-form-group-4">
+                        <div class="u-form-radio-button-wrapper">
+                            <input type="radio" name="radiobutton" value="Masculino">
+                            <label class="u-label" for="radiobutton">Masculino</label>
+                            <br>
+                            <input type="radio" name="radiobutton" value="Femenino">
+                            <label class="u-label" for="radiobutton">Femenino</label>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="u-form-email u-form-group">
+                        <label for="email-0d91" class="u-label u-label-6">Correo</label>
+                        <input type="email" placeholder="Ingrese su correo" id="email-0d91" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-4" required="">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-6">
+                        <label for="select-149a" class="u-label u-label-7">Departamento</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-149a" name="departamento" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-5" autofocus="autofocus">
                   <option value="Seleccione el departamento">Seleccione el departamento</option>
                   <option value="AMAZONAS">AMAZONAS</option>
                   <option value="ANTIOQUIA">ANTIOQUIA</option>
@@ -195,13 +221,13 @@
                   <option value="VAUPÉS">VAUPÉS</option>
                   <option value="VICHADA">VICHADA</option>
                 </select>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-              </div>
-            </div>
-            <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-7">
-              <label for="select-7d89" class="u-label u-label-8">Ciudades</label>
-              <div class="u-form-select-wrapper">
-                <select id="select-7d89" name="ciudades" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-7">
+                        <label for="select-7d89" class="u-label u-label-8">Ciudades</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="select-7d89" name="ciudades" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-6">
                   <option value="Seleccione la ciudad">Seleccione la ciudad</option>
                   <option value="Medellín">Medellín</option>
                   <option value="Abejorral">Abejorral</option>
@@ -246,1186 +272,110 @@
                   <option value="Dabeiba">Dabeiba</option>
                   <option value="Don Matías">Don Matías</option>
                   <option value="Ebéjico">Ebéjico</option>
-                  <option value="El Bagre">El Bagre</option>
-                  <option value="Entrerrios">Entrerrios</option>
-                  <option value="Envigado">Envigado</option>
-                  <option value="Fredonia">Fredonia</option>
-                  <option value="San Bernardo del Viento">San Bernardo del Viento</option>
-                  <option value="Giraldo">Giraldo</option>
-                  <option value="Girardota">Girardota</option>
-                  <option value="Gómez Plata">Gómez Plata</option>
-                  <option value="Istmina">Istmina</option>
-                  <option value="Guadalupe">Guadalupe</option>
-                  <option value="Guarne">Guarne</option>
-                  <option value="Guatapé">Guatapé</option>
-                  <option value="Heliconia">Heliconia</option>
-                  <option value="Hispania">Hispania</option>
-                  <option value="Itagui">Itagui</option>
-                  <option value="Ituango">Ituango</option>
-                  <option value="Belmira">Belmira</option>
-                  <option value="Jericó">Jericó</option>
-                  <option value="La Ceja">La Ceja</option>
-                  <option value="La Estrella">La Estrella</option>
-                  <option value="La Pintada">La Pintada</option>
-                  <option value="La Unión">La Unión</option>
-                  <option value="Liborina">Liborina</option>
-                  <option value="Maceo">Maceo</option>
-                  <option value="Marinilla">Marinilla</option>
-                  <option value="Montebello">Montebello</option>
-                  <option value="Murindó">Murindó</option>
-                  <option value="Mutatá">Mutatá</option>
-                  <option value="Nariño">Nariño</option>
-                  <option value="Necoclí">Necoclí</option>
-                  <option value="Nechí">Nechí</option>
-                  <option value="Olaya">Olaya</option>
-                  <option value="Peñol">Peñol</option>
-                  <option value="Peque">Peque</option>
-                  <option value="Pueblorrico">Pueblorrico</option>
-                  <option value="Puerto Berrío">Puerto Berrío</option>
-                  <option value="Puerto Nare">Puerto Nare</option>
-                  <option value="Puerto Triunfo">Puerto Triunfo</option>
-                  <option value="Remedios">Remedios</option>
-                  <option value="Retiro">Retiro</option>
-                  <option value="Rionegro">Rionegro</option>
-                  <option value="Sabanalarga">Sabanalarga</option>
-                  <option value="Sabaneta">Sabaneta</option>
-                  <option value="Salgar">Salgar</option>
-                  <option value="Ciénega">Ciénega</option>
-                  <option value="Santacruz">Santacruz</option>
-                  <option value="San Francisco">San Francisco</option>
-                  <option value="San Jerónimo">San Jerónimo</option>
-                  <option value="Puerto Wilches">Puerto Wilches</option>
-                  <option value="Puerto Parra">Puerto Parra</option>
-                  <option value="San Luis">San Luis</option>
-                  <option value="San Pedro">San Pedro</option>
-                  <option value="San Rafael">San Rafael</option>
-                  <option value="San Roque">San Roque</option>
-                  <option value="San Vicente">San Vicente</option>
-                  <option value="Santa Bárbara">Santa Bárbara</option>
-                  <option value="Santo Domingo">Santo Domingo</option>
-                  <option value="El Santuario">El Santuario</option>
-                  <option value="Segovia">Segovia</option>
-                  <option value="Sopetrán">Sopetrán</option>
-                  <option value="Támesis">Támesis</option>
-                  <option value="Tarazá">Tarazá</option>
-                  <option value="Tarso">Tarso</option>
-                  <option value="Titiribí">Titiribí</option>
-                  <option value="Toledo">Toledo</option>
-                  <option value="Turbo">Turbo</option>
-                  <option value="Uramita">Uramita</option>
-                  <option value="Urrao">Urrao</option>
-                  <option value="Valdivia">Valdivia</option>
-                  <option value="Valparaíso">Valparaíso</option>
-                  <option value="Vegachí">Vegachí</option>
-                  <option value="Venecia">Venecia</option>
-                  <option value="Yalí">Yalí</option>
-                  <option value="Yarumal">Yarumal</option>
-                  <option value="Yolombó">Yolombó</option>
-                  <option value="Yondó">Yondó</option>
-                  <option value="Zaragoza">Zaragoza</option>
-                  <option value="Barranquilla">Barranquilla</option>
-                  <option value="Baranoa">Baranoa</option>
-                  <option value="Candelaria">Candelaria</option>
-                  <option value="Galapa">Galapa</option>
-                  <option value="Luruaco">Luruaco</option>
-                  <option value="Malambo">Malambo</option>
-                  <option value="Manatí">Manatí</option>
-                  <option value="Piojó">Piojó</option>
-                  <option value="Polonuevo">Polonuevo</option>
-                  <option value="Sabanagrande">Sabanagrande</option>
-                  <option value="Sabanalarga">Sabanalarga</option>
-                  <option value="Santa Lucía">Santa Lucía</option>
-                  <option value="Santo Tomás">Santo Tomás</option>
-                  <option value="Soledad">Soledad</option>
-                  <option value="Suan">Suan</option>
-                  <option value="Tubará">Tubará</option>
-                  <option value="Usiacurí">Usiacurí</option>
-                  <option value="Achí">Achí</option>
-                  <option value="Arenal">Arenal</option>
-                  <option value="Arjona">Arjona</option>
-                  <option value="Arroyohondo">Arroyohondo</option>
-                  <option value="Calamar">Calamar</option>
-                  <option value="Cantagallo">Cantagallo</option>
-                  <option value="Cicuco">Cicuco</option>
-                  <option value="Córdoba">Córdoba</option>
-                  <option value="Clemencia">Clemencia</option>
-                  <option value="El Guamo">El Guamo</option>
-                  <option value="Magangué">Magangué</option>
-                  <option value="Mahates">Mahates</option>
-                  <option value="Margarita">Margarita</option>
-                  <option value="Montecristo">Montecristo</option>
-                  <option value="Mompós">Mompós</option>
-                  <option value="Morales">Morales</option>
-                  <option value="Norosí">Norosí</option>
-                  <option value="Pinillos">Pinillos</option>
-                  <option value="Regidor">Regidor</option>
-                  <option value="Río Viejo">Río Viejo</option>
-                  <option value="San Estanislao">San Estanislao</option>
-                  <option value="San Fernando">San Fernando</option>
-                  <option value="San Juan Nepomuceno">San Juan Nepomuceno</option>
-                  <option value="Santa Catalina">Santa Catalina</option>
-                  <option value="Santa Rosa">Santa Rosa</option>
-                  <option value="Simití">Simití</option>
-                  <option value="Soplaviento">Soplaviento</option>
-                  <option value="Talaigua Nuevo">Talaigua Nuevo</option>
-                  <option value="Tiquisio">Tiquisio</option>
-                  <option value="Turbaco">Turbaco</option>
-                  <option value="Turbaná">Turbaná</option>
-                  <option value="Villanueva">Villanueva</option>
-                  <option value="Tunja">Tunja</option>
-                  <option value="Almeida">Almeida</option>
-                  <option value="Aquitania">Aquitania</option>
-                  <option value="Arcabuco">Arcabuco</option>
-                  <option value="Berbeo">Berbeo</option>
-                  <option value="Betéitiva">Betéitiva</option>
-                  <option value="Boavita">Boavita</option>
-                  <option value="Boyacá">Boyacá</option>
-                  <option value="Briceño">Briceño</option>
-                  <option value="Buena Vista">Buena Vista</option>
-                  <option value="Busbanzá">Busbanzá</option>
-                  <option value="Caldas">Caldas</option>
-                  <option value="Campohermoso">Campohermoso</option>
-                  <option value="Cerinza">Cerinza</option>
-                  <option value="Chinavita">Chinavita</option>
-                  <option value="Chiquinquirá">Chiquinquirá</option>
-                  <option value="Chiscas">Chiscas</option>
-                  <option value="Chita">Chita</option>
-                  <option value="Chitaraque">Chitaraque</option>
-                  <option value="Chivatá">Chivatá</option>
-                  <option value="Cómbita">Cómbita</option>
-                  <option value="Coper">Coper</option>
-                  <option value="Corrales">Corrales</option>
-                  <option value="Covarachía">Covarachía</option>
-                  <option value="Cubará">Cubará</option>
-                  <option value="Cucaita">Cucaita</option>
-                  <option value="Cuítiva">Cuítiva</option>
-                  <option value="Chíquiza">Chíquiza</option>
-                  <option value="Chivor">Chivor</option>
-                  <option value="Duitama">Duitama</option>
-                  <option value="El Cocuy">El Cocuy</option>
-                  <option value="El Espino">El Espino</option>
-                  <option value="Firavitoba">Firavitoba</option>
-                  <option value="Floresta">Floresta</option>
-                  <option value="Gachantivá">Gachantivá</option>
-                  <option value="Gameza">Gameza</option>
-                  <option value="Garagoa">Garagoa</option>
-                  <option value="Guacamayas">Guacamayas</option>
-                  <option value="Guateque">Guateque</option>
-                  <option value="Guayatá">Guayatá</option>
-                  <option value="Güicán">Güicán</option>
-                  <option value="Iza">Iza</option>
-                  <option value="Jenesano">Jenesano</option>
-                  <option value="Jericó">Jericó</option>
-                  <option value="Labranzagrande">Labranzagrande</option>
-                  <option value="La Capilla">La Capilla</option>
-                  <option value="La Victoria">La Victoria</option>
-                  <option value="Macanal">Macanal</option>
-                  <option value="Maripí">Maripí</option>
-                  <option value="Miraflores">Miraflores</option>
-                  <option value="Mongua">Mongua</option>
-                  <option value="Monguí">Monguí</option>
-                  <option value="Moniquirá">Moniquirá</option>
-                  <option value="Muzo">Muzo</option>
-                  <option value="Nobsa">Nobsa</option>
-                  <option value="Nuevo Colón">Nuevo Colón</option>
-                  <option value="Oicatá">Oicatá</option>
-                  <option value="Otanche">Otanche</option>
-                  <option value="Pachavita">Pachavita</option>
-                  <option value="Páez">Páez</option>
-                  <option value="Paipa">Paipa</option>
-                  <option value="Pajarito">Pajarito</option>
-                  <option value="Panqueba">Panqueba</option>
-                  <option value="Pauna">Pauna</option>
-                  <option value="Paya">Paya</option>
-                  <option value="Pesca">Pesca</option>
-                  <option value="Pisba">Pisba</option>
-                  <option value="Puerto Boyacá">Puerto Boyacá</option>
-                  <option value="Quípama">Quípama</option>
-                  <option value="Ramiriquí">Ramiriquí</option>
-                  <option value="Ráquira">Ráquira</option>
-                  <option value="Rondón">Rondón</option>
-                  <option value="Saboyá">Saboyá</option>
-                  <option value="Sáchica">Sáchica</option>
-                  <option value="Samacá">Samacá</option>
-                  <option value="San Eduardo">San Eduardo</option>
-                  <option value="San Mateo">San Mateo</option>
-                  <option value="Santana">Santana</option>
-                  <option value="Santa María">Santa María</option>
-                  <option value="Santa Sofía">Santa Sofía</option>
-                  <option value="Sativanorte">Sativanorte</option>
-                  <option value="Sativasur">Sativasur</option>
-                  <option value="Siachoque">Siachoque</option>
-                  <option value="Soatá">Soatá</option>
-                  <option value="Socotá">Socotá</option>
-                  <option value="Socha">Socha</option>
-                  <option value="Sogamoso">Sogamoso</option>
-                  <option value="Somondoco">Somondoco</option>
-                  <option value="Sora">Sora</option>
-                  <option value="Sotaquirá">Sotaquirá</option>
-                  <option value="Soracá">Soracá</option>
-                  <option value="Susacón">Susacón</option>
-                  <option value="Sutamarchán">Sutamarchán</option>
-                  <option value="Sutatenza">Sutatenza</option>
-                  <option value="Tasco">Tasco</option>
-                  <option value="Tenza">Tenza</option>
-                  <option value="Tibaná">Tibaná</option>
-                  <option value="Tinjacá">Tinjacá</option>
-                  <option value="Tipacoque">Tipacoque</option>
-                  <option value="Toca">Toca</option>
-                  <option value="Tópaga">Tópaga</option>
-                  <option value="Tota">Tota</option>
-                  <option value="Turmequé">Turmequé</option>
-                  <option value="Tutazá">Tutazá</option>
-                  <option value="Umbita">Umbita</option>
-                  <option value="Ventaquemada">Ventaquemada</option>
-                  <option value="Viracachá">Viracachá</option>
-                  <option value="Zetaquira">Zetaquira</option>
-                  <option value="Manizales">Manizales</option>
-                  <option value="Aguadas">Aguadas</option>
-                  <option value="Anserma">Anserma</option>
-                  <option value="Aranzazu">Aranzazu</option>
-                  <option value="Belalcázar">Belalcázar</option>
-                  <option value="Chinchiná">Chinchiná</option>
-                  <option value="Filadelfia">Filadelfia</option>
-                  <option value="La Dorada">La Dorada</option>
-                  <option value="La Merced">La Merced</option>
-                  <option value="Manzanares">Manzanares</option>
-                  <option value="Marmato">Marmato</option>
-                  <option value="Marulanda">Marulanda</option>
-                  <option value="Neira">Neira</option>
-                  <option value="Norcasia">Norcasia</option>
-                  <option value="Pácora">Pácora</option>
-                  <option value="Palestina">Palestina</option>
-                  <option value="Pensilvania">Pensilvania</option>
-                  <option value="Riosucio">Riosucio</option>
-                  <option value="Risaralda">Risaralda</option>
-                  <option value="Salamina">Salamina</option>
-                  <option value="Samaná">Samaná</option>
-                  <option value="San José">San José</option>
-                  <option value="Supía">Supía</option>
-                  <option value="Victoria">Victoria</option>
-                  <option value="Villamaría">Villamaría</option>
-                  <option value="Viterbo">Viterbo</option>
-                  <option value="Florencia">Florencia</option>
-                  <option value="Albania">Albania</option>
-                  <option value="Curillo">Curillo</option>
-                  <option value="El Doncello">El Doncello</option>
-                  <option value="El Paujil">El Paujil</option>
-                  <option value="Morelia">Morelia</option>
-                  <option value="Puerto Rico">Puerto Rico</option>
-                  <option value="Solano">Solano</option>
-                  <option value="Solita">Solita</option>
-                  <option value="Valparaíso">Valparaíso</option>
-                  <option value="Popayán">Popayán</option>
-                  <option value="Almaguer">Almaguer</option>
-                  <option value="Argelia">Argelia</option>
-                  <option value="Balboa">Balboa</option>
-                  <option value="Bolívar">Bolívar</option>
-                  <option value="Buenos Aires">Buenos Aires</option>
-                  <option value="Cajibío">Cajibío</option>
-                  <option value="Caldono">Caldono</option>
-                  <option value="Caloto">Caloto</option>
-                  <option value="Corinto">Corinto</option>
-                  <option value="El Tambo">El Tambo</option>
-                  <option value="Florencia">Florencia</option>
-                  <option value="Guachené">Guachené</option>
-                  <option value="Guapi">Guapi</option>
-                  <option value="Inzá">Inzá</option>
-                  <option value="Jambaló">Jambaló</option>
-                  <option value="La Sierra">La Sierra</option>
-                  <option value="La Vega">La Vega</option>
-                  <option value="López">López</option>
-                  <option value="Mercaderes">Mercaderes</option>
-                  <option value="Miranda">Miranda</option>
-                  <option value="Morales">Morales</option>
-                  <option value="Padilla">Padilla</option>
-                  <option value="Patía">Patía</option>
-                  <option value="Piamonte">Piamonte</option>
-                  <option value="Piendamó">Piendamó</option>
-                  <option value="Puerto Tejada">Puerto Tejada</option>
-                  <option value="Puracé">Puracé</option>
-                  <option value="Rosas">Rosas</option>
-                  <option value="Santa Rosa">Santa Rosa</option>
-                  <option value="Silvia">Silvia</option>
-                  <option value="Sotara">Sotara</option>
-                  <option value="Suárez">Suárez</option>
-                  <option value="Sucre">Sucre</option>
-                  <option value="Timbío">Timbío</option>
-                  <option value="Timbiquí">Timbiquí</option>
-                  <option value="Toribio">Toribio</option>
-                  <option value="Totoró">Totoró</option>
-                  <option value="Villa Rica">Villa Rica</option>
-                  <option value="Valledupar">Valledupar</option>
-                  <option value="Aguachica">Aguachica</option>
-                  <option value="Agustín Codazzi">Agustín Codazzi</option>
-                  <option value="Astrea">Astrea</option>
-                  <option value="Becerril">Becerril</option>
-                  <option value="Bosconia">Bosconia</option>
-                  <option value="Chimichagua">Chimichagua</option>
-                  <option value="Chiriguaná">Chiriguaná</option>
-                  <option value="Curumaní">Curumaní</option>
-                  <option value="El Copey">El Copey</option>
-                  <option value="El Paso">El Paso</option>
-                  <option value="Gamarra">Gamarra</option>
-                  <option value="González">González</option>
-                  <option value="La Gloria">La Gloria</option>
-                  <option value="Manaure">Manaure</option>
-                  <option value="Pailitas">Pailitas</option>
-                  <option value="Pelaya">Pelaya</option>
-                  <option value="Pueblo Bello">Pueblo Bello</option>
-                  <option value="La Paz">La Paz</option>
-                  <option value="San Alberto">San Alberto</option>
-                  <option value="San Diego">San Diego</option>
-                  <option value="San Martín">San Martín</option>
-                  <option value="Tamalameque">Tamalameque</option>
-                  <option value="Montería">Montería</option>
-                  <option value="Ayapel">Ayapel</option>
-                  <option value="Buenavista">Buenavista</option>
-                  <option value="Canalete">Canalete</option>
-                  <option value="Cereté">Cereté</option>
-                  <option value="Chimá">Chimá</option>
-                  <option value="Chinú">Chinú</option>
-                  <option value="Cotorra">Cotorra</option>
-                  <option value="Lorica">Lorica</option>
-                  <option value="Los Córdobas">Los Córdobas</option>
-                  <option value="Momil">Momil</option>
-                  <option value="Moñitos">Moñitos</option>
-                  <option value="Planeta Rica">Planeta Rica</option>
-                  <option value="Pueblo Nuevo">Pueblo Nuevo</option>
-                  <option value="Puerto Escondido">Puerto Escondido</option>
-                  <option value="Purísima">Purísima</option>
-                  <option value="Sahagún">Sahagún</option>
-                  <option value="San Andrés Sotavento">San Andrés Sotavento</option>
-                  <option value="San Antero">San Antero</option>
-                  <option value="San Pelayo">San Pelayo</option>
-                  <option value="Tierralta">Tierralta</option>
-                  <option value="Tuchín">Tuchín</option>
-                  <option value="Valencia">Valencia</option>
-                  <option value="Anapoima">Anapoima</option>
-                  <option value="Arbeláez">Arbeláez</option>
-                  <option value="Beltrán">Beltrán</option>
-                  <option value="Bituima">Bituima</option>
-                  <option value="Bojacá">Bojacá</option>
-                  <option value="Cabrera">Cabrera</option>
-                  <option value="Cachipay">Cachipay</option>
-                  <option value="Cajicá">Cajicá</option>
-                  <option value="Caparrapí">Caparrapí</option>
-                  <option value="Caqueza">Caqueza</option>
-                  <option value="Chaguaní">Chaguaní</option>
-                  <option value="Chipaque">Chipaque</option>
-                  <option value="Choachí">Choachí</option>
-                  <option value="Chocontá">Chocontá</option>
-                  <option value="Cogua">Cogua</option>
-                  <option value="Cota">Cota</option>
-                  <option value="Cucunubá">Cucunubá</option>
-                  <option value="El Colegio">El Colegio</option>
-                  <option value="El Rosal">El Rosal</option>
-                  <option value="Fomeque">Fomeque</option>
-                  <option value="Fosca">Fosca</option>
-                  <option value="Funza">Funza</option>
-                  <option value="Fúquene">Fúquene</option>
-                  <option value="Gachala">Gachala</option>
-                  <option value="Gachancipá">Gachancipá</option>
-                  <option value="Gachetá">Gachetá</option>
-                  <option value="Girardot">Girardot</option>
-                  <option value="Granada">Granada</option>
-                  <option value="Guachetá">Guachetá</option>
-                  <option value="Guaduas">Guaduas</option>
-                  <option value="Guasca">Guasca</option>
-                  <option value="Guataquí">Guataquí</option>
-                  <option value="Guatavita">Guatavita</option>
-                  <option value="Guayabetal">Guayabetal</option>
-                  <option value="Gutiérrez">Gutiérrez</option>
-                  <option value="Jerusalén">Jerusalén</option>
-                  <option value="Junín">Junín</option>
-                  <option value="La Calera">La Calera</option>
-                  <option value="La Mesa">La Mesa</option>
-                  <option value="La Palma">La Palma</option>
-                  <option value="La Peña">La Peña</option>
-                  <option value="La Vega">La Vega</option>
-                  <option value="Lenguazaque">Lenguazaque</option>
-                  <option value="Macheta">Macheta</option>
-                  <option value="Madrid">Madrid</option>
-                  <option value="Manta">Manta</option>
-                  <option value="Medina">Medina</option>
-                  <option value="Mosquera">Mosquera</option>
-                  <option value="Nariño">Nariño</option>
-                  <option value="Nemocón">Nemocón</option>
-                  <option value="Nilo">Nilo</option>
-                  <option value="Nimaima">Nimaima</option>
-                  <option value="Nocaima">Nocaima</option>
-                  <option value="Venecia">Venecia</option>
-                  <option value="Pacho">Pacho</option>
-                  <option value="Paime">Paime</option>
-                  <option value="Pandi">Pandi</option>
-                  <option value="Paratebueno">Paratebueno</option>
-                  <option value="Pasca">Pasca</option>
-                  <option value="Puerto Salgar">Puerto Salgar</option>
-                  <option value="Pulí">Pulí</option>
-                  <option value="Quebradanegra">Quebradanegra</option>
-                  <option value="Quetame">Quetame</option>
-                  <option value="Quipile">Quipile</option>
-                  <option value="Apulo">Apulo</option>
-                  <option value="Ricaurte">Ricaurte</option>
-                  <option value="San Bernardo">San Bernardo</option>
-                  <option value="San Cayetano">San Cayetano</option>
-                  <option value="San Francisco">San Francisco</option>
-                  <option value="Sesquilé">Sesquilé</option>
-                  <option value="Sibaté">Sibaté</option>
-                  <option value="Silvania">Silvania</option>
-                  <option value="Simijaca">Simijaca</option>
-                  <option value="Soacha">Soacha</option>
-                  <option value="Subachoque">Subachoque</option>
-                  <option value="Suesca">Suesca</option>
-                  <option value="Supatá">Supatá</option>
-                  <option value="Susa">Susa</option>
-                  <option value="Sutatausa">Sutatausa</option>
-                  <option value="Tabio">Tabio</option>
-                  <option value="Tausa">Tausa</option>
-                  <option value="Tena">Tena</option>
-                  <option value="Tenjo">Tenjo</option>
-                  <option value="Tibacuy">Tibacuy</option>
-                  <option value="Tibirita">Tibirita</option>
-                  <option value="Tocaima">Tocaima</option>
-                  <option value="Tocancipá">Tocancipá</option>
-                  <option value="Topaipí">Topaipí</option>
-                  <option value="Ubalá">Ubalá</option>
-                  <option value="Ubaque">Ubaque</option>
-                  <option value="Une">Une</option>
-                  <option value="Útica">Útica</option>
-                  <option value="Vianí">Vianí</option>
-                  <option value="Villagómez">Villagómez</option>
-                  <option value="Villapinzón">Villapinzón</option>
-                  <option value="Villeta">Villeta</option>
-                  <option value="Viotá">Viotá</option>
-                  <option value="Zipacón">Zipacón</option>
-                  <option value="Quibdó">Quibdó</option>
-                  <option value="Acandí">Acandí</option>
-                  <option value="Alto Baudo">Alto Baudo</option>
-                  <option value="Atrato">Atrato</option>
-                  <option value="Bagadó">Bagadó</option>
-                  <option value="Bahía Solano">Bahía Solano</option>
-                  <option value="Bajo Baudó">Bajo Baudó</option>
-                  <option value="Bojaya">Bojaya</option>
-                  <option value="Cértegui">Cértegui</option>
-                  <option value="Condoto">Condoto</option>
-                  <option value="Juradó">Juradó</option>
-                  <option value="Lloró">Lloró</option>
-                  <option value="Medio Atrato">Medio Atrato</option>
-                  <option value="Medio Baudó">Medio Baudó</option>
-                  <option value="Medio San Juan">Medio San Juan</option>
-                  <option value="Nóvita">Nóvita</option>
-                  <option value="Nuquí">Nuquí</option>
-                  <option value="Río Iro">Río Iro</option>
-                  <option value="Río Quito">Río Quito</option>
-                  <option value="Riosucio">Riosucio</option>
-                  <option value="Sipí">Sipí</option>
-                  <option value="Unguía">Unguía</option>
-                  <option value="Neiva">Neiva</option>
-                  <option value="Acevedo">Acevedo</option>
-                  <option value="Agrado">Agrado</option>
-                  <option value="Aipe">Aipe</option>
-                  <option value="Algeciras">Algeciras</option>
-                  <option value="Altamira">Altamira</option>
-                  <option value="Baraya">Baraya</option>
-                  <option value="Campoalegre">Campoalegre</option>
-                  <option value="Colombia">Colombia</option>
-                  <option value="Elías">Elías</option>
-                  <option value="Garzón">Garzón</option>
-                  <option value="Gigante">Gigante</option>
-                  <option value="Guadalupe">Guadalupe</option>
-                  <option value="Hobo">Hobo</option>
-                  <option value="Iquira">Iquira</option>
-                  <option value="Isnos">Isnos</option>
-                  <option value="La Argentina">La Argentina</option>
-                  <option value="La Plata">La Plata</option>
-                  <option value="Nátaga">Nátaga</option>
-                  <option value="Oporapa">Oporapa</option>
-                  <option value="Paicol">Paicol</option>
-                  <option value="Palermo">Palermo</option>
-                  <option value="Palestina">Palestina</option>
-                  <option value="Pital">Pital</option>
-                  <option value="Pitalito">Pitalito</option>
-                  <option value="Rivera">Rivera</option>
-                  <option value="Saladoblanco">Saladoblanco</option>
-                  <option value="Santa María">Santa María</option>
-                  <option value="Suaza">Suaza</option>
-                  <option value="Tarqui">Tarqui</option>
-                  <option value="Tesalia">Tesalia</option>
-                  <option value="Tello">Tello</option>
-                  <option value="Teruel">Teruel</option>
-                  <option value="Timaná">Timaná</option>
-                  <option value="Villavieja">Villavieja</option>
-                  <option value="Yaguará">Yaguará</option>
-                  <option value="Riohacha">Riohacha</option>
-                  <option value="Albania">Albania</option>
-                  <option value="Barrancas">Barrancas</option>
-                  <option value="Dibula">Dibula</option>
-                  <option value="Distracción">Distracción</option>
-                  <option value="El Molino">El Molino</option>
-                  <option value="Fonseca">Fonseca</option>
-                  <option value="Hatonuevo">Hatonuevo</option>
-                  <option value="Maicao">Maicao</option>
-                  <option value="Manaure">Manaure</option>
-                  <option value="Uribia">Uribia</option>
-                  <option value="Urumita">Urumita</option>
-                  <option value="Villanueva">Villanueva</option>
-                  <option value="Santa Marta">Santa Marta</option>
-                  <option value="Algarrobo">Algarrobo</option>
-                  <option value="Aracataca">Aracataca</option>
-                  <option value="Ariguaní">Ariguaní</option>
-                  <option value="Cerro San Antonio">Cerro San Antonio</option>
-                  <option value="Chivolo">Chivolo</option>
-                  <option value="Concordia">Concordia</option>
-                  <option value="El Banco">El Banco</option>
-                  <option value="El Piñon">El Piñon</option>
-                  <option value="El Retén">El Retén</option>
-                  <option value="Fundación">Fundación</option>
-                  <option value="Guamal">Guamal</option>
-                  <option value="Nueva Granada">Nueva Granada</option>
-                  <option value="Pedraza">Pedraza</option>
-                  <option value="Pivijay">Pivijay</option>
-                  <option value="Plato">Plato</option>
-                  <option value="Remolino">Remolino</option>
-                  <option value="Salamina">Salamina</option>
-                  <option value="San Zenón">San Zenón</option>
-                  <option value="Santa Ana">Santa Ana</option>
-                  <option value="Sitionuevo">Sitionuevo</option>
-                  <option value="Tenerife">Tenerife</option>
-                  <option value="Zapayán">Zapayán</option>
-                  <option value="Zona Bananera">Zona Bananera</option>
-                  <option value="Villavicencio">Villavicencio</option>
-                  <option value="Acacias">Acacias</option>
-                  <option value="Cabuyaro">Cabuyaro</option>
-                  <option value="Cubarral">Cubarral</option>
-                  <option value="Cumaral">Cumaral</option>
-                  <option value="El Calvario">El Calvario</option>
-                  <option value="El Castillo">El Castillo</option>
-                  <option value="El Dorado">El Dorado</option>
-                  <option value="Granada">Granada</option>
-                  <option value="Guamal">Guamal</option>
-                  <option value="Mapiripán">Mapiripán</option>
-                  <option value="Mesetas">Mesetas</option>
-                  <option value="La Macarena">La Macarena</option>
-                  <option value="Uribe">Uribe</option>
-                  <option value="Lejanías">Lejanías</option>
-                  <option value="Puerto Concordia">Puerto Concordia</option>
-                  <option value="Puerto Gaitán">Puerto Gaitán</option>
-                  <option value="Puerto López">Puerto López</option>
-                  <option value="Puerto Lleras">Puerto Lleras</option>
-                  <option value="Puerto Rico">Puerto Rico</option>
-                  <option value="Restrepo">Restrepo</option>
-                  <option value="San Juanito">San Juanito</option>
-                  <option value="San Martín">San Martín</option>
-                  <option value="Vista Hermosa">Vista Hermosa</option>
-                  <option value="Pasto">Pasto</option>
-                  <option value="Albán">Albán</option>
-                  <option value="Aldana">Aldana</option>
-                  <option value="Ancuyá">Ancuyá</option>
-                  <option value="Barbacoas">Barbacoas</option>
-                  <option value="Colón">Colón</option>
-                  <option value="Consaca">Consaca</option>
-                  <option value="Contadero">Contadero</option>
-                  <option value="Córdoba">Córdoba</option>
-                  <option value="Cuaspud">Cuaspud</option>
-                  <option value="Cumbal">Cumbal</option>
-                  <option value="Cumbitara">Cumbitara</option>
-                  <option value="El Charco">El Charco</option>
-                  <option value="El Peñol">El Peñol</option>
-                  <option value="El Rosario">El Rosario</option>
-                  <option value="El Tambo">El Tambo</option>
-                  <option value="Funes">Funes</option>
-                  <option value="Guachucal">Guachucal</option>
-                  <option value="Guaitarilla">Guaitarilla</option>
-                  <option value="Gualmatán">Gualmatán</option>
-                  <option value="Iles">Iles</option>
-                  <option value="Imués">Imués</option>
-                  <option value="Ipiales">Ipiales</option>
-                  <option value="La Cruz">La Cruz</option>
-                  <option value="La Florida">La Florida</option>
-                  <option value="La Llanada">La Llanada</option>
-                  <option value="La Tola">La Tola</option>
-                  <option value="La Unión">La Unión</option>
-                  <option value="Leiva">Leiva</option>
-                  <option value="Linares">Linares</option>
-                  <option value="Los Andes">Los Andes</option>
-                  <option value="Magüí">Magüí</option>
-                  <option value="Mallama">Mallama</option>
-                  <option value="Mosquera">Mosquera</option>
-                  <option value="Nariño">Nariño</option>
-                  <option value="Olaya Herrera">Olaya Herrera</option>
-                  <option value="Ospina">Ospina</option>
-                  <option value="Francisco Pizarro">Francisco Pizarro</option>
-                  <option value="Policarpa">Policarpa</option>
-                  <option value="Potosí">Potosí</option>
-                  <option value="Providencia">Providencia</option>
-                  <option value="Puerres">Puerres</option>
-                  <option value="Pupiales">Pupiales</option>
-                  <option value="Ricaurte">Ricaurte</option>
-                  <option value="Roberto Payán">Roberto Payán</option>
-                  <option value="Samaniego">Samaniego</option>
-                  <option value="Sandoná">Sandoná</option>
-                  <option value="San Bernardo">San Bernardo</option>
-                  <option value="San Lorenzo">San Lorenzo</option>
-                  <option value="San Pablo">San Pablo</option>
-                  <option value="Santa Bárbara">Santa Bárbara</option>
-                  <option value="Sapuyes">Sapuyes</option>
-                  <option value="Taminango">Taminango</option>
-                  <option value="Tangua">Tangua</option>
-                  <option value="Túquerres">Túquerres</option>
-                  <option value="Yacuanquer">Yacuanquer</option>
-                  <option value="Armenia">Armenia</option>
-                  <option value="Buenavista">Buenavista</option>
-                  <option value="Circasia">Circasia</option>
-                  <option value="Córdoba">Córdoba</option>
-                  <option value="Filandia">Filandia</option>
-                  <option value="La Tebaida">La Tebaida</option>
-                  <option value="Montenegro">Montenegro</option>
-                  <option value="Pijao">Pijao</option>
-                  <option value="Quimbaya">Quimbaya</option>
-                  <option value="Salento">Salento</option>
-                  <option value="Pereira">Pereira</option>
-                  <option value="Apía">Apía</option>
-                  <option value="Balboa">Balboa</option>
-                  <option value="Dosquebradas">Dosquebradas</option>
-                  <option value="Guática">Guática</option>
-                  <option value="La Celia">La Celia</option>
-                  <option value="La Virginia">La Virginia</option>
-                  <option value="Marsella">Marsella</option>
-                  <option value="Mistrató">Mistrató</option>
-                  <option value="Pueblo Rico">Pueblo Rico</option>
-                  <option value="Quinchía">Quinchía</option>
-                  <option value="Santuario">Santuario</option>
-                  <option value="Bucaramanga">Bucaramanga</option>
-                  <option value="Aguada">Aguada</option>
-                  <option value="Albania">Albania</option>
-                  <option value="Aratoca">Aratoca</option>
-                  <option value="Barbosa">Barbosa</option>
-                  <option value="Barichara">Barichara</option>
-                  <option value="Barrancabermeja">Barrancabermeja</option>
-                  <option value="Betulia">Betulia</option>
-                  <option value="Bolívar">Bolívar</option>
-                  <option value="Cabrera">Cabrera</option>
-                  <option value="California">California</option>
-                  <option value="Carcasí">Carcasí</option>
-                  <option value="Cepitá">Cepitá</option>
-                  <option value="Cerrito">Cerrito</option>
-                  <option value="Charalá">Charalá</option>
-                  <option value="Charta">Charta</option>
-                  <option value="Chipatá">Chipatá</option>
-                  <option value="Cimitarra">Cimitarra</option>
-                  <option value="Concepción">Concepción</option>
-                  <option value="Confines">Confines</option>
-                  <option value="Contratación">Contratación</option>
-                  <option value="Coromoro">Coromoro</option>
-                  <option value="Curití">Curití</option>
-                  <option value="El Guacamayo">El Guacamayo</option>
-                  <option value="El Playón">El Playón</option>
-                  <option value="Encino">Encino</option>
-                  <option value="Enciso">Enciso</option>
-                  <option value="Florián">Florián</option>
-                  <option value="Floridablanca">Floridablanca</option>
-                  <option value="Galán">Galán</option>
-                  <option value="Gambita">Gambita</option>
-                  <option value="Girón">Girón</option>
-                  <option value="Guaca">Guaca</option>
-                  <option value="Guadalupe">Guadalupe</option>
-                  <option value="Guapotá">Guapotá</option>
-                  <option value="Guavatá">Guavatá</option>
-                  <option value="Güepsa">Güepsa</option>
-                  <option value="Jesús María">Jesús María</option>
-                  <option value="Jordán">Jordán</option>
-                  <option value="La Belleza">La Belleza</option>
-                  <option value="Landázuri">Landázuri</option>
-                  <option value="La Paz">La Paz</option>
-                  <option value="Lebríja">Lebríja</option>
-                  <option value="Los Santos">Los Santos</option>
-                  <option value="Macaravita">Macaravita</option>
-                  <option value="Málaga">Málaga</option>
-                  <option value="Matanza">Matanza</option>
-                  <option value="Mogotes">Mogotes</option>
-                  <option value="Molagavita">Molagavita</option>
-                  <option value="Ocamonte">Ocamonte</option>
-                  <option value="Oiba">Oiba</option>
-                  <option value="Onzaga">Onzaga</option>
-                  <option value="Palmar">Palmar</option>
-                  <option value="Páramo">Páramo</option>
-                  <option value="Piedecuesta">Piedecuesta</option>
-                  <option value="Pinchote">Pinchote</option>
-                  <option value="Puente Nacional">Puente Nacional</option>
-                  <option value="Rionegro">Rionegro</option>
-                  <option value="San Andrés">San Andrés</option>
-                  <option value="San Gil">San Gil</option>
-                  <option value="San Joaquín">San Joaquín</option>
-                  <option value="San Miguel">San Miguel</option>
-                  <option value="Santa Bárbara">Santa Bárbara</option>
-                  <option value="Simacota">Simacota</option>
-                  <option value="Socorro">Socorro</option>
-                  <option value="Suaita">Suaita</option>
-                  <option value="Sucre">Sucre</option>
-                  <option value="Suratá">Suratá</option>
-                  <option value="Tona">Tona</option>
-                  <option value="Vélez">Vélez</option>
-                  <option value="Vetas">Vetas</option>
-                  <option value="Villanueva">Villanueva</option>
-                  <option value="Zapatoca">Zapatoca</option>
-                  <option value="Sincelejo">Sincelejo</option>
-                  <option value="Buenavista">Buenavista</option>
-                  <option value="Caimito">Caimito</option>
-                  <option value="Coloso">Coloso</option>
-                  <option value="Coveñas">Coveñas</option>
-                  <option value="Chalán">Chalán</option>
-                  <option value="El Roble">El Roble</option>
-                  <option value="Galeras">Galeras</option>
-                  <option value="Guaranda">Guaranda</option>
-                  <option value="La Unión">La Unión</option>
-                  <option value="Los Palmitos">Los Palmitos</option>
-                  <option value="Majagual">Majagual</option>
-                  <option value="Morroa">Morroa</option>
-                  <option value="Ovejas">Ovejas</option>
-                  <option value="Palmito">Palmito</option>
-                  <option value="San Benito Abad">San Benito Abad</option>
-                  <option value="San Marcos">San Marcos</option>
-                  <option value="San Onofre">San Onofre</option>
-                  <option value="San Pedro">San Pedro</option>
-                  <option value="Sucre">Sucre</option>
-                  <option value="Tolú Viejo">Tolú Viejo</option>
-                  <option value="Alpujarra">Alpujarra</option>
-                  <option value="Alvarado">Alvarado</option>
-                  <option value="Ambalema">Ambalema</option>
-                  <option value="Armero">Armero</option>
-                  <option value="Ataco">Ataco</option>
-                  <option value="Cajamarca">Cajamarca</option>
-                  <option value="Chaparral">Chaparral</option>
-                  <option value="Coello">Coello</option>
-                  <option value="Coyaima">Coyaima</option>
-                  <option value="Cunday">Cunday</option>
-                  <option value="Dolores">Dolores</option>
-                  <option value="Espinal">Espinal</option>
-                  <option value="Falan">Falan</option>
-                  <option value="Flandes">Flandes</option>
-                  <option value="Fresno">Fresno</option>
-                  <option value="Guamo">Guamo</option>
-                  <option value="Herveo">Herveo</option>
-                  <option value="Honda">Honda</option>
-                  <option value="Icononzo">Icononzo</option>
-                  <option value="Mariquita">Mariquita</option>
-                  <option value="Melgar">Melgar</option>
-                  <option value="Murillo">Murillo</option>
-                  <option value="Natagaima">Natagaima</option>
-                  <option value="Ortega">Ortega</option>
-                  <option value="Palocabildo">Palocabildo</option>
-                  <option value="Piedras">Piedras</option>
-                  <option value="Planadas">Planadas</option>
-                  <option value="Prado">Prado</option>
-                  <option value="Purificación">Purificación</option>
-                  <option value="Rio Blanco">Rio Blanco</option>
-                  <option value="Roncesvalles">Roncesvalles</option>
-                  <option value="Rovira">Rovira</option>
-                  <option value="Saldaña">Saldaña</option>
-                  <option value="Santa Isabel">Santa Isabel</option>
-                  <option value="Venadillo">Venadillo</option>
-                  <option value="Villahermosa">Villahermosa</option>
-                  <option value="Villarrica">Villarrica</option>
-                  <option value="Arauquita">Arauquita</option>
-                  <option value="Cravo Norte">Cravo Norte</option>
-                  <option value="Fortul">Fortul</option>
-                  <option value="Puerto Rondón">Puerto Rondón</option>
-                  <option value="Saravena">Saravena</option>
-                  <option value="Tame">Tame</option>
-                  <option value="Arauca">Arauca</option>
-                  <option value="Yopal">Yopal</option>
-                  <option value="Aguazul">Aguazul</option>
-                  <option value="Chámeza">Chámeza</option>
-                  <option value="Hato Corozal">Hato Corozal</option>
-                  <option value="La Salina">La Salina</option>
-                  <option value="Monterrey">Monterrey</option>
-                  <option value="Pore">Pore</option>
-                  <option value="Recetor">Recetor</option>
-                  <option value="Sabanalarga">Sabanalarga</option>
-                  <option value="Sácama">Sácama</option>
-                  <option value="Tauramena">Tauramena</option>
-                  <option value="Trinidad">Trinidad</option>
-                  <option value="Villanueva">Villanueva</option>
-                  <option value="Mocoa">Mocoa</option>
-                  <option value="Colón">Colón</option>
-                  <option value="Orito">Orito</option>
-                  <option value="Puerto Caicedo">Puerto Caicedo</option>
-                  <option value="Puerto Guzmán">Puerto Guzmán</option>
-                  <option value="Leguízamo">Leguízamo</option>
-                  <option value="Sibundoy">Sibundoy</option>
-                  <option value="San Francisco">San Francisco</option>
-                  <option value="San Miguel">San Miguel</option>
-                  <option value="Santiago">Santiago</option>
-                  <option value="Leticia">Leticia</option>
-                  <option value="El Encanto">El Encanto</option>
-                  <option value="La Chorrera">La Chorrera</option>
-                  <option value="La Pedrera">La Pedrera</option>
-                  <option value="La Victoria">La Victoria</option>
-                  <option value="Puerto Arica">Puerto Arica</option>
-                  <option value="Puerto Nariño">Puerto Nariño</option>
-                  <option value="Puerto Santander">Puerto Santander</option>
-                  <option value="Tarapacá">Tarapacá</option>
-                  <option value="Inírida">Inírida</option>
-                  <option value="Barranco Minas">Barranco Minas</option>
-                  <option value="Mapiripana">Mapiripana</option>
-                  <option value="San Felipe">San Felipe</option>
-                  <option value="Puerto Colombia">Puerto Colombia</option>
-                  <option value="La Guadalupe">La Guadalupe</option>
-                  <option value="Cacahual">Cacahual</option>
-                  <option value="Pana Pana">Pana Pana</option>
-                  <option value="Morichal">Morichal</option>
-                  <option value="Mitú">Mitú</option>
-                  <option value="Caruru">Caruru</option>
-                  <option value="Pacoa">Pacoa</option>
-                  <option value="Taraira">Taraira</option>
-                  <option value="Papunaua">Papunaua</option>
-                  <option value="Puerto Carreño">Puerto Carreño</option>
-                  <option value="La Primavera">La Primavera</option>
-                  <option value="Santa Rosalía">Santa Rosalía</option>
-                  <option value="Cumaribo">Cumaribo</option>
-                  <option value="San José del Fragua">San José del Fragua</option>
-                  <option value="Barranca de Upía">Barranca de Upía</option>
-                  <option value="Palmas del Socorro">Palmas del Socorro</option>
-                  <option value="San Juan de Río Seco">San Juan de Río Seco</option>
-                  <option value="Juan de Acosta">Juan de Acosta</option>
-                  <option value="Fuente de Oro">Fuente de Oro</option>
-                  <option value="San Luis de Gaceno">San Luis de Gaceno</option>
-                  <option value="El Litoral del San Juan">El Litoral del San Juan</option>
-                  <option value="Villa de San Diego de Ubate">Villa de San Diego de Ubate</option>
-                  <option value="Barranco de Loba">Barranco de Loba</option>
-                  <option value="Togüí">Togüí</option>
-                  <option value="Santa Rosa del Sur">Santa Rosa del Sur</option>
-                  <option value="El Cantón del San Pablo">El Cantón del San Pablo</option>
-                  <option value="Villa de Leyva">Villa de Leyva</option>
-                  <option value="San Sebastián de Buenavista">San Sebastián de Buenavista</option>
-                  <option value="Paz de Río">Paz de Río</option>
-                  <option value="Hatillo de Loba">Hatillo de Loba</option>
-                  <option value="Sabanas de San Angel">Sabanas de San Angel</option>
-                  <option value="Calamar">Calamar</option>
-                  <option value="Río de Oro">Río de Oro</option>
-                  <option value="San Pedro de Uraba">San Pedro de Uraba</option>
-                  <option value="San José del Guaviare">San José del Guaviare</option>
-                  <option value="Santa Rosa de Viterbo">Santa Rosa de Viterbo</option>
-                  <option value="Santander de Quilichao">Santander de Quilichao</option>
-                  <option value="Miraflores">Miraflores</option>
-                  <option value="Santafé de Antioquia">Santafé de Antioquia</option>
-                  <option value="San Carlos de Guaroa">San Carlos de Guaroa</option>
-                  <option value="Palmar de Varela">Palmar de Varela</option>
-                  <option value="Santa Rosa de Osos">Santa Rosa de Osos</option>
-                  <option value="San Andrés de Cuerquía">San Andrés de Cuerquía</option>
-                  <option value="Valle de San Juan">Valle de San Juan</option>
-                  <option value="San Vicente de Chucurí">San Vicente de Chucurí</option>
-                  <option value="San José de Miranda">San José de Miranda</option>
-                  <option value="Providencia">Providencia</option>
-                  <option value="Santa Rosa de Cabal">Santa Rosa de Cabal</option>
-                  <option value="Guayabal de Siquima">Guayabal de Siquima</option>
-                  <option value="Belén de Los Andaquies">Belén de Los Andaquies</option>
-                  <option value="Paz de Ariporo">Paz de Ariporo</option>
-                  <option value="Santa Helena del Opón">Santa Helena del Opón</option>
-                  <option value="San Pablo de Borbur">San Pablo de Borbur</option>
-                  <option value="La Jagua del Pilar">La Jagua del Pilar</option>
-                  <option value="La Jagua de Ibirico">La Jagua de Ibirico</option>
-                  <option value="San Luis de Sincé">San Luis de Sincé</option>
-                  <option value="San Luis de Gaceno">San Luis de Gaceno</option>
-                  <option value="El Carmen de Bolívar">El Carmen de Bolívar</option>
-                  <option value="El Carmen de Atrato">El Carmen de Atrato</option>
-                  <option value="San Juan de Betulia">San Juan de Betulia</option>
-                  <option value="Pijiño del Carmen">Pijiño del Carmen</option>
-                  <option value="Vigía del Fuerte">Vigía del Fuerte</option>
-                  <option value="San Martín de Loba">San Martín de Loba</option>
-                  <option value="Altos del Rosario">Altos del Rosario</option>
-                  <option value="Carmen de Apicala">Carmen de Apicala</option>
-                  <option value="San Antonio del Tequendama">San Antonio del Tequendama</option>
-                  <option value="Sabana de Torres">Sabana de Torres</option>
-                  <option value="El Retorno">El Retorno</option>
-                  <option value="San José de Uré">San José de Uré</option>
-                  <option value="San Pedro de Cartago">San Pedro de Cartago</option>
-                  <option value="Campo de La Cruz">Campo de La Cruz</option>
-                  <option value="San Juan de Arama">San Juan de Arama</option>
-                  <option value="San José de La Montaña">San José de La Montaña</option>
-                  <option value="Cartagena del Chairá">Cartagena del Chairá</option>
-                  <option value="San José del Palmar">San José del Palmar</option>
-                  <option value="Agua de Dios">Agua de Dios</option>
-                  <option value="San Jacinto del Cauca">San Jacinto del Cauca</option>
-                  <option value="San Agustín">San Agustín</option>
-                  <option value="El Tablón de Gómez">El Tablón de Gómez</option>
-                  <option value="San Andrés">San Andrés</option>
-                  <option value="San José de Pare">San José de Pare</option>
-                  <option value="Valle de Guamez">Valle de Guamez</option>
-                  <option value="San Pablo de Borbur">San Pablo de Borbur</option>
-                  <option value="Santiago de Tolú">Santiago de Tolú</option>
-                  <option value="Bogotá D.C.">Bogotá D.C.</option>
-                  <option value="Carmen de Carupa">Carmen de Carupa</option>
-                  <option value="Ciénaga de Oro">Ciénaga de Oro</option>
-                  <option value="San Juan de Urabá">San Juan de Urabá</option>
-                  <option value="San Juan del Cesar">San Juan del Cesar</option>
-                  <option value="El Carmen de Chucurí">El Carmen de Chucurí</option>
-                  <option value="El Carmen de Viboral">El Carmen de Viboral</option>
-                  <option value="Belén de Umbría">Belén de Umbría</option>
-                  <option value="Belén de Bajira">Belén de Bajira</option>
-                  <option value="Valle de San José">Valle de San José</option>
-                  <option value="San Luis">San Luis</option>
-                  <option value="San Miguel de Sema">San Miguel de Sema</option>
-                  <option value="San Antonio">San Antonio</option>
-                  <option value="San Benito">San Benito</option>
-                  <option value="Vergara">Vergara</option>
-                  <option value="San Carlos">San Carlos</option>
-                  <option value="Puerto Alegría">Puerto Alegría</option>
-                  <option value="Hato">Hato</option>
-                  <option value="San Jacinto">San Jacinto</option>
-                  <option value="San Sebastián">San Sebastián</option>
-                  <option value="San Carlos">San Carlos</option>
-                  <option value="Tuta">Tuta</option>
-                  <option value="Silos">Silos</option>
-                  <option value="Cácota">Cácota</option>
-                  <option value="El Dovio">El Dovio</option>
-                  <option value="Toledo">Toledo</option>
-                  <option value="Roldanillo">Roldanillo</option>
-                  <option value="Mutiscua">Mutiscua</option>
-                  <option value="Argelia">Argelia</option>
-                  <option value="El Zulia">El Zulia</option>
-                  <option value="Salazar">Salazar</option>
-                  <option value="Sevilla">Sevilla</option>
-                  <option value="Zarzal">Zarzal</option>
-                  <option value="Cucutilla">Cucutilla</option>
-                  <option value="El Cerrito">El Cerrito</option>
-                  <option value="Cartago">Cartago</option>
-                  <option value="Caicedonia">Caicedonia</option>
-                  <option value="Puerto Santander">Puerto Santander</option>
-                  <option value="Gramalote">Gramalote</option>
-                  <option value="El Cairo">El Cairo</option>
-                  <option value="El Tarra">El Tarra</option>
-                  <option value="La Unión">La Unión</option>
-                  <option value="Restrepo">Restrepo</option>
-                  <option value="Teorama">Teorama</option>
-                  <option value="Dagua">Dagua</option>
-                  <option value="Arboledas">Arboledas</option>
-                  <option value="Guacarí">Guacarí</option>
-                  <option value="Lourdes">Lourdes</option>
-                  <option value="Ansermanuevo">Ansermanuevo</option>
-                  <option value="Bochalema">Bochalema</option>
-                  <option value="Bugalagrande">Bugalagrande</option>
-                  <option value="Convención">Convención</option>
-                  <option value="Hacarí">Hacarí</option>
-                  <option value="La Victoria">La Victoria</option>
-                  <option value="Herrán">Herrán</option>
-                  <option value="Ginebra">Ginebra</option>
-                  <option value="Yumbo">Yumbo</option>
-                  <option value="Obando">Obando</option>
-                  <option value="Tibú">Tibú</option>
-                  <option value="San Cayetano">San Cayetano</option>
-                  <option value="San Calixto">San Calixto</option>
-                  <option value="Bolívar">Bolívar</option>
-                  <option value="La Playa">La Playa</option>
-                  <option value="Cali">Cali</option>
-                  <option value="San Pedro">San Pedro</option>
-                  <option value="Guadalajara de Buga">Guadalajara de Buga</option>
-                  <option value="Chinácota">Chinácota</option>
-                  <option value="Ragonvalia">Ragonvalia</option>
-                  <option value="La Esperanza">La Esperanza</option>
-                  <option value="Villa del Rosario">Villa del Rosario</option>
-                  <option value="Chitagá">Chitagá</option>
-                  <option value="Calima">Calima</option>
-                  <option value="Sardinata">Sardinata</option>
-                  <option value="Andalucía">Andalucía</option>
-                  <option value="Pradera">Pradera</option>
-                  <option value="Abrego">Abrego</option>
-                  <option value="Los Patios">Los Patios</option>
-                  <option value="Ocaña">Ocaña</option>
-                  <option value="Bucarasica">Bucarasica</option>
-                  <option value="Yotoco">Yotoco</option>
-                  <option value="Palmira">Palmira</option>
-                  <option value="Riofrío">Riofrío</option>
-                  <option value="Santiago">Santiago</option>
-                  <option value="Alcalá">Alcalá</option>
-                  <option value="Versalles">Versalles</option>
-                  <option value="Labateca">Labateca</option>
-                  <option value="Cachirá">Cachirá</option>
-                  <option value="Villa Caro">Villa Caro</option>
-                  <option value="Durania">Durania</option>
-                  <option value="El Águila">El Águila</option>
-                  <option value="Toro">Toro</option>
-                  <option value="Candelaria">Candelaria</option>
-                  <option value="La Cumbre">La Cumbre</option>
-                  <option value="Ulloa">Ulloa</option>
-                  <option value="Trujillo">Trujillo</option>
-                  <option value="Vijes">Vijes</option>
-                  <option value="Chimá">Chimá</option>
-                  <option value="Sampués">Sampués</option>
-                  <option value="Nunchía">Nunchía</option>
-                  <option value="Pamplona">Pamplona</option>
-                  <option value="Albán">Albán</option>
-                  <option value="Yavaraté">Yavaraté</option>
-                  <option value="Montelíbano">Montelíbano</option>
-                  <option value="Puerto Asís">Puerto Asís</option>
-                  <option value="Corozal">Corozal</option>
-                  <option value="Buesaco">Buesaco</option>
-                  <option value="Maní">Maní</option>
-                  <option value="El Peñón">El Peñón</option>
-                  <option value="Tuluá">Tuluá</option>
-                  <option value="Casabianca">Casabianca</option>
-                  <option value="Anolaima">Anolaima</option>
-                  <option value="Chía">Chía</option>
-                  <option value="San Andrés de Tumaco">San Andrés de Tumaco</option>
-                  <option value="Milán">Milán</option>
-                  <option value="Capitanejo">Capitanejo</option>
-                  <option value="Anzoátegui">Anzoátegui</option>
-                  <option value="Florida">Florida</option>
-                  <option value="Repelón">Repelón</option>
-                  <option value="Frontino">Frontino</option>
-                  <option value="El Peñón">El Peñón</option>
-                  <option value="Pamplonita">Pamplonita</option>
-                  <option value="Miriti Paraná">Miriti Paraná</option>
-                  <option value="Támara">Támara</option>
-                  <option value="Tibasosa">Tibasosa</option>
-                  <option value="Páez">Páez</option>
-                  <option value="Ibagué">Ibagué</option>
-                  <option value="Puerto Colombia">Puerto Colombia</option>
-                  <option value="Belén">Belén</option>
-                  <option value="Sopó">Sopó</option>
-                  <option value="Carmen del Darien">Carmen del Darien</option>
-                  <option value="Gama">Gama</option>
-                  <option value="Sasaima">Sasaima</option>
-                  <option value="Chachagüí">Chachagüí</option>
-                  <option value="Cúcuta">Cúcuta</option>
-                  <option value="Cartagena">Cartagena</option>
-                  <option value="Granada">Granada</option>
-                  <option value="Santa Bárbara de Pinto">Santa Bárbara de Pinto</option>
-                  <option value="María la Baja">María la Baja</option>
-                  <option value="La Montañita">La Montañita</option>
-                  <option value="San Vicente del Caguán">San Vicente del Caguán</option>
-                  <option value="El Peñón">El Peñón</option>
-                  <option value="Jardín">Jardín</option>
-                  <option value="Jamundí">Jamundí</option>
-                  <option value="Tadó">Tadó</option>
-                  <option value="Orocué">Orocué</option>
-                  <option value="Líbano">Líbano</option>
-                  <option value="Yacopí">Yacopí</option>
-                  <option value="Calarcá">Calarcá</option>
-                  <option value="Sonsón">Sonsón</option>
-                  <option value="El Carmen">El Carmen</option>
-                  <option value="Lérida">Lérida</option>
-                  <option value="La Apartada">La Apartada</option>
-                  <option value="San Cristóbal">San Cristóbal</option>
-                  <option value="Fusagasugá">Fusagasugá</option>
-                  <option value="Zambrano">Zambrano</option>
-                  <option value="La Uvita">La Uvita</option>
-                  <option value="Zipaquirá">Zipaquirá</option>
-                  <option value="Génova">Génova</option>
-                  <option value="Suárez">Suárez</option>
-                  <option value="Castilla la Nueva">Castilla la Nueva</option>
-                  <option value="Belén">Belén</option>
-                  <option value="Unión Panamericana">Unión Panamericana</option>
-                  <option value="Pueblo Viejo">Pueblo Viejo</option>
-                  <option value="Villagarzón">Villagarzón</option>
-                  <option value="Facatativá">Facatativá</option>
-                  <option value="Puerto Libertador">Puerto Libertador</option>
-                  <option value="Marquetalia">Marquetalia</option>
-                  <option value="Arboleda">Arboleda</option>
-                  <option value="Buenaventura">Buenaventura</option>
-                  <option value="Ciénaga">Ciénaga</option>
-                  <option value="Ponedera">Ponedera</option>
+          
                 </select>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
-              </div>
-            </div>
-            <div class="u-form-group u-form-partition-factor-2 u-form-group-8">
-              <label for="text-4a1a" class="u-label u-label-9">Telefono</label>
-              <input type="text" id="text-4a1a" name="Telefono" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-7" placeholder="Ingrese su Telefono">
-            </div>
-            <div class="u-form-group u-form-partition-factor-2">
-              <label for="message-0d91" class="u-label u-label-10">Codigo postal</label>
-              <input placeholder="Ingrese Codigo postal" rows="4" cols="50" id="message-0d91" name="Codigopostal" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-8" required="required" type="text">
-            </div>
-            <div class="u-form-group u-form-partition-factor-2 u-form-group-10">
-              <label for="text-243a" class="u-label u-label-11">Contraseña</label>
-              <input type="text" id="text-243a" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-9" placeholder="Ingrese su Contraseña">
-            </div>
-            <div class="u-form-group u-form-partition-factor-2 u-form-group-11">
-              <label for="text-ea99" class="u-label u-label-12">Confirme la contraseña</label>
-              <input type="text" id="text-ea99" name="pasword2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-10" placeholder="Ingrese su Contraseña">
-            </div>
-            <div class="u-form-agree u-form-group u-form-group-12">
-              <input type="checkbox" id="agree-6319" name="agree" class="u-agree-checkbox" required="">
-              <label for="agree-6319" class="u-label u-label-13">Yo acepto los<a href="#"> terminos y condiciones </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                        </div>
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-group-8">
+                        <label for="text-4a1a" class="u-label u-label-9">Telefono</label>
+                        <input type="text" id="text-4a1a" name="Telefono" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-7" placeholder="Ingrese su Telefono">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2">
+                        <label for="message-0d91" class="u-label u-label-10">Codigo postal</label>
+                        <input placeholder="Ingrese Codigo postal" rows="4" cols="50" id="message-0d91" name="Codigopostal" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-8" required="required" type="text">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-group-10">
+                        <label for="text-243a" class="u-label u-label-11">Contraseña</label>
+                        <input type="text" id="text-243a" name="password" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-9" placeholder="Ingrese su Contraseña">
+                    </div>
+                    <div class="u-form-group u-form-partition-factor-2 u-form-group-11">
+                        <label for="text-ea99" class="u-label u-label-12">Confirme la contraseña</label>
+                        <input type="text" id="text-ea99" name="pasword2" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white u-input-10" placeholder="Ingrese su Contraseña">
+                    </div>
+                    <div class="u-form-agree u-form-group u-form-group-12">
+                        <input type="checkbox" id="agree-6319" name="agree" class="u-agree-checkbox" required="">
+                        <label for="agree-6319" class="u-label u-label-13">Yo acepto los<a href="#"> terminos y condiciones </a>
               </label>
-            </div>
-            <div class="u-align-center u-form-group u-form-submit">
-              <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Crear Usuario<br>
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit">
+                        <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">Crear Usuario<br>
               </a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                </form>
             </div>
-            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-          </form>
+            <p class="u-text u-text-default u-text-1">Genero</p>
         </div>
-        <p class="u-text u-text-default u-text-1">Genero</p>
-      </div>
     </section>
-    
-    
-    <footer class="u-clearfix u-footer u-grey-80" id="sec-16fe"><div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
-          <div class="u-gutter-0 u-layout">
-            <div class="u-layout-row">
-              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
-                <div class="u-container-layout u-container-layout-1">
-                  <h6 class="u-custom-font u-heading-font u-text u-text-1">Headline</h6>
-                  <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-2">Sample footer text</p>
+
+
+    <footer class="u-clearfix u-footer u-grey-80" id="sec-16fe">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+                <div class="u-gutter-0 u-layout">
+                    <div class="u-layout-row">
+                        <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1">
+                            <div class="u-container-layout u-container-layout-1">
+                                <h6 class="u-custom-font u-heading-font u-text u-text-1">Headline</h6>
+                                <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-2">Sample footer text</p>
+                            </div>
+                        </div>
+                        <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
+                            <div class="u-container-layout u-container-layout-2">
+                                <h6 class="u-custom-font u-heading-font u-text u-text-3">Headline</h6>
+                                <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-4">Sample footer text</p>
+                            </div>
+                        </div>
+                        <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
+                            <div class="u-container-layout u-container-layout-3">
+                                <h6 class="u-custom-font u-heading-font u-text u-text-5">Headline</h6>
+                                <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-6">Sample footer text</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2">
-                <div class="u-container-layout u-container-layout-2">
-                  <h6 class="u-custom-font u-heading-font u-text u-text-3">Headline</h6>
-                  <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-4">Sample footer text</p>
-                </div>
-              </div>
-              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3">
-                <div class="u-container-layout u-container-layout-3">
-                  <h6 class="u-custom-font u-heading-font u-text u-text-5">Headline</h6>
-                  <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-6">Sample footer text</p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-50 u-line-1"></div>
-        <div class="u-social-icons u-spacing-10 u-social-icons-1">
-          <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-9b4f"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-9b4f"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+            <div class="u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-50 u-line-1"></div>
+            <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                <a class="u-social-url" title="facebook" target="_blank" href=""><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-9b4f"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-9b4f"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
             c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path></svg></span>
           </a>
-          <a class="u-social-url" title="twitter" target="_blank" href=""><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-6938"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6938"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+                <a class="u-social-url" title="twitter" target="_blank" href=""><span class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-6938"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6938"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
             c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
             c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
             c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
             c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path></svg></span>
           </a>
-          <a class="u-social-url" title="instagram" target="_blank" href=""><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-4e0d"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4e0d"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+                <a class="u-social-url" title="instagram" target="_blank" href=""><span class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-4e0d"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-4e0d"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
             z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path><path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path><path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
             C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
             c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path></svg></span>
           </a>
-          <a class="u-social-url" title="linkedin" target="_blank" href=""><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-6bd1"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6bd1"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+                <a class="u-social-url" title="linkedin" target="_blank" href=""><span class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xlink:href="#svg-6bd1"></use></svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-6bd1"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle><path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
             C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
             H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path></svg></span>
           </a>
+            </div>
+            <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+            </a>
         </div>
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-          <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-      </div></footer>
+    </footer>
     <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
+        <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+            <span>Website Templates</span>
+        </a>
+        <p class="u-text">
+            <span>created with</span>
+        </p>
+        <a class="u-link" href="https://nicepage.com/" target="_blank">
+            <span>Website Builder Software</span>
+        </a>.
     </section>
-  </body>
+</body>
+
 </html>

@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+
 app = Flask(__name__,template_folder='template') 
 
 @app.route('/') 
@@ -10,9 +11,8 @@ def productos():
    return render_template('productos.html')
 
 @app.route('/micuenta')
-def productos():
-   return render_template('productos.html')
+def micuenta():
+   return render_template('login.html')
 
-
-
-app.run() #se encarga de ejecutar el servidor 5000
+if __name__ == '__main__':
+   app.run(debug=True ,port=8080) #se encarga de ejecutar el servidor 5000
