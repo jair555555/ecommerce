@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Registro</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-    <link rel="stylesheet" href="Registro.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery-1.9.1.min.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='css/nicepage.css')}}" media="screen">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename='css/Registro.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for( 'static', filename='js/jquery-1.9.1.min.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for( 'static', filename='js/nicepage.js')}}" defer=""></script>
     <meta name="generator" content="Nicepage 3.27.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 
@@ -95,18 +95,45 @@
     <header class="u-clearfix u-header u-header" id="sec-7f8f">
         <div class="u-clearfix u-sheet u-sheet-1">
             <a href="https://nicepage.com" class="u-image u-logo u-image-1">
-                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
-            </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 96 96" style=""><use xlink:href="#svg-0a91"></use></svg><svg class="u-svg-content" viewBox="0 0 96 96" id="svg-0a91"><g id="_01-cart"><path d="M95.209,25.7A4,4,0,0,0,92,24.087H32v8H86.624L83.05,44H40v8H80.65L77.024,64.087H31.017l-15.171-53.1a4,4,0,0,0-3.817-2.9L.029,8l-.058,8,9.006.065L24.154,69.186A4,4,0,0,0,28,72.087H38.613a12,12,0,1,0,2.774,0H66.613a12,12,0,1,0,2.774,0H80a4,4,0,0,0,3.832-2.851l12-40A4,4,0,0,0,95.209,25.7ZM44,84a4,4,0,1,1-4-4A4,4,0,0,1,44,84Zm28,0a4,4,0,1,1-4-4A4,4,0,0,1,72,84Z"></path>
-</g></svg></span><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-2" data-href="/login.html" data-page-id="818745"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xlink:href="#svg-b086"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-b086"><g id="Solid"><path d="m260.52 329.539a24 24 0 0 0 33.941 33.941l90.51-90.51a24 24 0 0 0 0-33.941l-90.51-90.509a24 24 0 0 0 -33.941 0 24 24 0 0 0 0 33.941l49.539 49.539h-262.059a24 24 0 0 0 -24 24 24 24 0 0 0 24 24h262.059z"></path><path d="m448 24h-224a40 40 0 0 0 -40 40v32a24 24 0 0 0 48 0v-24h208v368h-208v-24a24 24 0 0 0 -48 0v32a40 40 0 0 0 40 40h224a40 40 0 0 0 40-40v-384a40 40 0 0 0 -40-40z"></path>
-</g></svg></span>
+                <img src="{{ url_for( 'static', filename='img/default-logo.png')}}" class="u-logo-image u-logo-image-1">
+            </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1"><svg class="u-svg-link"
+                    preserveAspectRatio="xMidYMin slice" viewBox="0 0 96 96" style="">
+                    <use xlink:href="#svg-0a91"></use>
+                </svg><svg class="u-svg-content" viewBox="0 0 96 96" id="svg-0a91">
+                    <g id="_01-cart">
+                        <path
+                            d="M95.209,25.7A4,4,0,0,0,92,24.087H32v8H86.624L83.05,44H40v8H80.65L77.024,64.087H31.017l-15.171-53.1a4,4,0,0,0-3.817-2.9L.029,8l-.058,8,9.006.065L24.154,69.186A4,4,0,0,0,28,72.087H38.613a12,12,0,1,0,2.774,0H66.613a12,12,0,1,0,2.774,0H80a4,4,0,0,0,3.832-2.851l12-40A4,4,0,0,0,95.209,25.7ZM44,84a4,4,0,1,1-4-4A4,4,0,0,1,44,84Zm28,0a4,4,0,1,1-4-4A4,4,0,0,1,72,84Z">
+                        </path>
+                    </g>
+                </svg></span><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-2" data-href="/login.html" data-page-id="818745"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512"
+                    style="">
+                    <use xlink:href="#svg-b086"></use>
+                </svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-b086">
+                    <g id="Solid">
+                        <path
+                            d="m260.52 329.539a24 24 0 0 0 33.941 33.941l90.51-90.51a24 24 0 0 0 0-33.941l-90.51-90.509a24 24 0 0 0 -33.941 0 24 24 0 0 0 0 33.941l49.539 49.539h-262.059a24 24 0 0 0 -24 24 24 24 0 0 0 24 24h262.059z">
+                        </path>
+                        <path
+                            d="m448 24h-224a40 40 0 0 0 -40 40v32a24 24 0 0 0 48 0v-24h208v368h-208v-24a24 24 0 0 0 -48 0v32a40 40 0 0 0 40 40h224a40 40 0 0 0 40-40v-384a40 40 0 0 0 -40-40z">
+                        </path>
+                    </g>
+                </svg></span>
             <a class="u-login u-login-1">Login</a>
             <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
                 <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;" wfd-invisible="true">
                     <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-                        <svg><use xlink:href="#menu-hamburger"></use></svg>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
-</symbol>
-</defs></svg>
+                        <svg>
+                            <use xlink:href="#menu-hamburger"></use>
+                        </svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                    <rect y="1" width="16" height="2"></rect>
+                                    <rect y="7" width="16" height="2"></rect>
+                                    <rect y="13" width="16" height="2"></rect>
+                                </symbol>
+                            </defs>
+                        </svg>
                     </a>
                 </div>
                 <div class="u-custom-menu u-nav-container" wfd-invisible="true">
@@ -170,6 +197,8 @@
                     </div>
                     <div class="u-form-group u-form-partition-factor-2 u-form-radiobutton u-form-group-4">
                         <div class="u-form-radio-button-wrapper">
+                            <label class="u-label" for="radiobutton">Genero</label>
+                            <br>
                             <input type="radio" name="radiobutton" value="Masculino">
                             <label class="u-label" for="radiobutton">Masculino</label>
                             <br>
@@ -308,7 +337,7 @@
                     <input type="hidden" value="" name="recaptchaResponse">
                 </form>
             </div>
-            <p class="u-text u-text-default u-text-1">Genero</p>
+
         </div>
     </section>
 
@@ -361,7 +390,7 @@
           </a>
             </div>
             <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-                <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+                <img src="{{ url_for( 'static', filename='img/default-logo.png')}}" class="u-logo-image u-logo-image-1">
             </a>
         </div>
     </footer>

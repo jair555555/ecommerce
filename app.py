@@ -11,8 +11,16 @@ def productos():
    return render_template('productos.html')
 
 @app.route('/login')
-def micuenta():
+def login():
    return render_template('login.html')
+
+@app.route('/registro')
+def registro():
+   return render_template('Registro.html')
+
+@app.route('/eliminarp')
+def deleteProduct():
+   return render_template('Eliminar-producto.html')
 
 if __name__ == '__main__':
    app.run(debug=True ,port=8080) #se encarga de ejecutar el servidor 5000
