@@ -22,5 +22,9 @@ def registro():
 def deleteProduct():
    return render_template('Eliminar-producto.html')
 
+@app.route('/Listaproductos')
+def listaproductos():
+   return render_template('Lista-de-productos.html')
+
 if __name__ == '__main__':
    app.run(debug=True ,port=8080) #se encarga de ejecutar el servidor 5000
