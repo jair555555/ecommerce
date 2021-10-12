@@ -9,6 +9,7 @@
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title></title>
     <meta name="generator" content="Nicepage 3.27.1, nicepage.com">
+
 </head>
 
 <body class="u-body" data-style="products-template-1" data-posts="" data-global-section-properties="{&quot;code&quot;:&quot;PRODUCTS&quot;,&quot;colorings&quot;:{&quot;light&quot;:[&quot;clean&quot;,&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;],&quot;dark&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;]},&quot;isPreset&quot;:true}"
@@ -22,7 +23,7 @@
                     <div class="u-align-center u-container-style u-products-item u-repeater-item u-white u-block-930c-4">
                         <div class="u-container-layout u-similar-container u-valign-bottom u-block-930c-5">
 
-                            <img alt="" class="u-expanded-width u-image u-image-default u-product-control u-block-930c-6" src="np://user.desktop.nicepage.com/Site_818718/images/1.svg">
+                            <img alt="" class="u-expanded-width u-image u-image-default u-product-control u-block-930c-6" src="{{ url_for( 'static', filename='img/1.svg')}}">
                             <h4 class="u-product-control u-text u-block-930c-7">
                                 <a class="u-product-title-link" href="#">Product 1 Title</a>
                             </h4><span class="u-icon u-icon-circle u-block-930c-43"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 49.94 49.94" style=""><use xlink:href="#svg-bb8d"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 49.94 49.94" x="0px" y="0px" id="svg-bb8d" style="enable-background:new 0 0 49.94 49.94;" data-color=""><path d="M48.856,22.731c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
@@ -2821,3 +2822,6 @@
 </body>
 
 </html>
+<link rel="stylesheet" href="{{ url_for( 'static', filename='css/nicepage.css')}}" media="screen">
+<script class="u-script" type="text/javascript" src="//static.nicepage.com/shared/assets/jquery-1.9.1.min.js" defer=""></script>
+<script class="u-script" type="text/javascript" src="//capp.nicepage.com/dc06bf325af4de98f634af6549d107114cf3123b/nicepage.js" defer=""></script>
