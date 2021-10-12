@@ -26,5 +26,9 @@ def deleteProduct():
 def listaproductos():
    return render_template('Lista-de-productos.html')
 
+@app.route('/Listad')
+def listad():
+   return render_template('Lista-de-deseos.html')
+
 if __name__ == '__main__':
    app.run(debug=True ,port=8080) #se encarga de ejecutar el servidor 5000
