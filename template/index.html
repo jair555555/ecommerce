@@ -1,387 +1,569 @@
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="es-CO">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="Sample Product">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Productos</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css') }}" media=" screen " type="text/css">
-    <link rel="stylesheet " href="{{ url_for('static', filename='css/Productos.css')}}" media="screen " type="text/css">
-    <script class="u-script " type="text/javascript " src="{{ url_for( 'static', filename='js/jquery-1.9.1.min.js' )}} " defer=" "></script>
-    <script class="u-script " type="text/javascript " src="{{ url_for( 'static', filename='js/nicepage.js' )}} " defer=" "></script>
-    <meta name="generator " content="Nicepage 3.27.1, nicepage.com ">
-    <link id="u-theme-google-font " rel="stylesheet " href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i ">
-    <link id="u-page-google-font " rel="stylesheet " href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i ">
-
-
-
-
-    <script type="application/ld+json ">
-        {
-            "@context ": "http://schema.org ",
-            "@type ": "Organization ",
-            "name ": "WebSite818718 ",
-            "url ": "/ ",
-            "logo ": "images/default-logo.png ",
-            "sameAs ": []
-        }
-    </script>
-    <meta name="theme-color " content="#4a53e0 ">
-    <meta property="og:title " content="Productos ">
-    <meta property="og:description " content=" ">
-    <meta property="og:type " content="website ">
-    <link rel="canonical " href="/ ">
-    <script>
-        function onClick(e) {
-            e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute('reCAPTCHA_site_key', {
-                    action: 'submit'
-                }).then(function(token) {
-                    // Add your logic to submit to your backend server here.
-                });
-            });
-        }
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeLIb4cAAAAAJpQ2ndOZjXyKzAwUlixz1nFCdEE "></script>
-    <script>
-        (function(grecaptcha, sitekey, actions) {
-
-            var recaptcha = {
-
-                execute: function(action) {
-                    grecaptcha.execute(
-                        sitekey, {
-                            action: action
-                        }
-                    ).then(function(token) {
-                        var forms = document.getElementsByTagName('form');
-
-                        for (var i = 0; i < forms.length; i++) {
-                            var fields = forms[i].getElementsByTagName('input');
-
-                            for (var j = 0; j < fields.length; j++) {
-                                var field = fields[j];
-
-                                if ('recaptchaResponse' === field.getAttribute('name')) {
-                                    field.setAttribute('value', token);
-                                    break;
-                                }
-                            }
-                        }
-                    });
-                },
-
-                executeContact: function() {
-                    recaptcha.execute(actions['contact']);
-                }
-            };
-
-            grecaptcha.ready(
-                recaptcha.executeContact
-            );
-
-            document.addEventListener('change',
-                recaptcha.executeContact, false
-            );
-        })(
-            grecaptcha,
-            '6LeLIb4cAAAAAJpQ2ndOZjXyKzAwUlixz1nFCdEE', {
-                "contact ": "contact "
-            }
-        );
-    </script>
-</head>
-
-<body class="u-body ">
-    <header class="u-clearfix u-header u-header " id="sec-7f8f ">
-        <div class="u-clearfix u-sheet u-sheet-1 ">
-            <a href="https://nicepage.com " class="u-image u-logo u-image-1 ">
-                <img src="{{ url_for('static', filename='img/default-logo.png')}}" class="u-logo-image u-logo-image-1 ">
-            </a><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-1 "><svg class="u-svg-link "
-                    preserveAspectRatio="xMidYMin slice " viewBox="0 0 96 96 " style=" ">
-                    <use xlink:href="#svg-0a91 "></use>
-                </svg><svg class="u-svg-content
-        " viewBox="0 0 96 96 " id="svg-0a91 ">
-                    <g id="_01-cart ">
-                        <path
-                            d="M95.209,25.7A4,4,0,0,0,92,24.087H32v8H86.624L83.05,44H40v8H80.65L77.024,64.087H31.017l-15.171-53.1a4,4,0,0,0-3.817-2.9L.029,8l-.058,8,9.006.065L24.154,69.186A4,4,0,0,0,28,72.087H38.613a12,12,0,1,0,2.774,0H66.613a12,12,0,1,0,2.774,0H80a4,4,0,0,0,3.832-2.851l12-40A4,4,0,0,0,95.209,25.7ZM44,84a4,4,0,1,1-4-4A4,4,0,0,1,44,84Zm28,0a4,4,0,1,1-4-4A4,4,0,0,1,72,84Z ">
-                        </path>
-                    </g>
-                </svg></span><span class="u-icon u-icon-circle u-text-palette-1-base u-icon-2 " data-href="/login.html " data-page-id="818745 "><svg class="u-svg-link " preserveAspectRatio="xMidYMin slice "
-                    viewBox="0 0 512 512 " style=" ">
-                    <use xlink:href="#svg-b086
-        "></use>
-                </svg><svg class="u-svg-content " viewBox="0 0 512 512 " id="svg-b086 ">
-                    <g id="Solid ">
-                        <path d="m260.52 329.539a24 24 0 0 0 33.941 33.941l90.51-90.51a24 24 0 0 0 0-33.941l-90.51-90.509a24 24 0 0 0 -33.941 0 24 24 0 0 0 0 33.941l49.539 49.539h-262.059a24 24 0 0 0 -24
-        24 24 24 0 0 0 24 24h262.059z "></path>
-                        <path
-                            d="m448 24h-224a40 40 0 0 0 -40 40v32a24 24 0 0 0 48 0v-24h208v368h-208v-24a24 24 0 0 0 -48 0v32a40 40 0 0 0 40 40h224a40 40 0 0 0 40-40v-384a40 40 0 0 0 -40-40z ">
-                        </path>
-                    </g>
-                </svg></span>
-            <a class="u-login u-login-1 ">Login</a>
-            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1 ">
-                <div class="menu-collapse " style="font-size: 1rem; letter-spacing: 0px; " wfd-invisible="true ">
-                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " href="# ">
-                        <svg>
-                            <use xlink:href="#menu-hamburger "></use>
-                        </svg>
-                        <svg version="1.1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink ">
-                            <defs>
-                                <symbol id="menu-hamburger " viewBox="0 0 16 16 " style="width: 16px; height: 16px; ">
-                                    <rect y="1 " width="16 " height="2
-        "></rect>
-                                    <rect y="7 " width="16 " height="2 "></rect>
-                                    <rect y="13 " width="16 " height="2 "></rect>
-                                </symbol>
-                            </defs>
-                        </svg>
-                    </a>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ecommerce</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+        
+		    <link rel="stylesheet" href="{{ url_for('static', filename='css/nicepage.css') }}" media=" screen " type="text/css">
+    <link rel="stylesheet " href="{{ url_for('static', filename='css/estilos.css')}}" media="screen " type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="container container--flex">
+                <div class="main-header__container">
+                    <h1 class="main-header__title">ECOMMERCE</h1>
+                    <span class="icon-menu " id="btn-menu"><i class="fas fa-bars"></i></span>
+                    <nav class="main-nav" id="main-nav">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="AñadirProducto.html" class="menu__link">PRODUCTOS</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">LISTA DE DESEOS</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">SOPORTE</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">CONTÁCTENOS</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">MI CUENTA</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="u-custom-menu u-nav-container " wfd-invisible="true ">
-                    <ul class="u-nav u-unstyled u-nav-1 ">
-                        <li class="u-nav-item "><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " href="Home.html " style="padding: 10px 32px; ">Home</a>
-                        </li>
-                        <li class="u-nav-item "><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " href="Productos.html " style="padding: 10px 32px; ">Productos</a>
-                        </li>
-                        <li class="u-nav-item "><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " style="padding: 10px 32px; ">Lista de deseos</a>
-                        </li>
-                        <li class="u-nav-item "><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " style="padding: 10px 32px; ">Soporte</a>
-                        </li>
-                        <li class="u-nav-item "><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " style="padding: 10px 32px; ">Contactenos</a>
-                        </li>
-                        <li class="u-nav-item "><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base " style="padding: 10px 32px; ">Mi cuenta</a>
-                        </li>
-                    </ul>
+                <div class="main-header__container">
+                    <span class="main-header__txt">Need Help</span>
+                    <p class="main-header__txt"><i class="fas fa-phone"></i> Call 123456789</p>
+                </div> 
+                <div class="main-header__container"> 
+                    <input type="search" class="main-header__input" placeholder="Buscar producto"><i class="fas fa-search"></i>
                 </div>
-                <div class="u-custom-menu u-nav-container-collapse " wfd-invisible="true ">
-                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav ">
-                        <div class="u-inner-container-layout u-sidenav-overflow ">
-                            <div class="u-menu-close "></div>
-                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2 ">
-                                <li class="u-nav-item "><a class="u-button-style u-nav-link " href="Home.html " style="padding: 10px 32px; ">Home</a>
-                                </li>
-                                <li class="u-nav-item "><a class="u-button-style u-nav-link " href="Productos.html " style="padding: 10px 32px; ">Productos</a>
-                                </li>
-                                <li class="u-nav-item "><a class="u-button-style u-nav-link " href="Lista-de-deseos.html" style="padding: 10px 32px; ">Lista de deseos</a>
-                                </li>
-                                <li class="u-nav-item "><a class="u-button-style u-nav-link " href="Productos.html " style="padding: 10px 32px; ">Soporte</a>
-                                </li>
-                                <li class="u-nav-item "><a class="u-button-style u-nav-link " href="Productos.html " style="padding: 10px 32px; ">Contactenos</a>
-                                </li>
-                                <li class="u-nav-item "><a class="u-button-style u-nav-link " href="login.html" tyle="padding: 10px 32px; ">Mi cuenta</a>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+        </header>
+        <div class="container-slider">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <img src="img/img1.jpg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">E-commerce</h2>
+                        <p class="slider__txt">100% Quality product</p>
+                        <a href="" class="btn-shop">SEE NOW</a>
                     </div>
-                    <div class="u-black u-menu-overlay u-opacity u-opacity-70 " wfd-invisible="true "></div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <section class="u-align-center u-clearfix u-section-1 " id="carousel_45c5 ">
-        <div class="u-clearfix u-sheet u-valign-middle-xs u-valign-top-lg u-valign-top-xl u-sheet-1 ">
-            <div class="u-expanded-width u-palette-1-base u-shape u-shape-rectangle u-shape-1 "></div>
-            <!--product-->
-            <!--product_options_json-->
-            <!--{"source ":" "}-->
-            <!--/product_options_json-->
-            <!--product_item-->
-            <div class="u-align-center-xs u-container-style u-product u-product-1 ">
-                <div class="u-container-layout u-valign-top u-container-layout-1 ">
-                    <!--product_image-->
-                    <img src="{{ url_for( 'static', filename='img/rfg-min.jpg')}} " alt=" " class="u-expanded-width u-image u-image-default u-product-control u-image-1 ">
-                    <!--/product_image-->
-                    <div class="u-align-center u-container-style u-expanded-width-xs u-group u-shape-rectangle u-white u-group-1 ">
-                        <div class="u-container-layout u-valign-middle u-container-layout-2 ">
-                            <!--product_title-->
-                            <h2 class="u-product-control u-text u-text-default u-text-1 ">
-                                <a class="u-product-title-link " href="# ">
-                                    <!--product_title_content-->Sample Product
-                                    <!--/product_title_content-->
-                                </a>
-                            </h2>
-                            <!--/product_title-->
-                            <!--product_price-->
-                            <div class="u-product-control u-product-price u-product-price-1 ">
-                                <div class="u-price-wrapper u-spacing-10 ">
-                                    <!--product_old_price-->
-                                    <div class="u-hide-price u-old-price " style="text-decoration: line-through !important; " wfd-invisible="true ">
-                                        <!--product_old_price_content-->$12
-                                        <!--/product_old_price_content-->
-                                    </div>
-                                    <!--/product_old_price-->
-                                    <!--product_regular_price-->
-                                    <div class="u-price " style="font-size: 1.875rem; font-weight: 700; ">
-                                        <!--product_regular_price_content-->$9.95
-                                        <!--/product_regular_price_content-->
-                                    </div>
-                                    <!--/product_regular_price-->
-                                </div>
-                            </div>
-                            <!--/product_price-->
-                            <!--product_content-->
-                            <div class="u-product-control u-product-desc u-text u-text-2 ">
-                                <!--product_content_content-->
-                                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
-                                <!--/product_content_content-->
-                            </div>
-                            <!--/product_content-->
-                            <!--product_button-->
-                            <!--options_json-->
-                            <!--{"clickType ":"add-to-cart ","content ":" "}-->
-                            <!--/options_json-->
-                            <a href="https://nicepage.com " class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-product-control u-text-black u-text-hover-white u-btn-1 ">
-                                <!--product_button_content-->Add to Cart
-                                <!--/product_button_content-->
-                            </a>
-                            <!--/product_button-->
-                        </div>
+                <div class="slider__section">
+                    <img src="img/img2.jpg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">E-commerce</h2>
+                        <p class="slider__txt">Cool summer sale 50% off</p>
+                        <a href="" class="btn-shop">SEE NOW</a>
+                    </div>
+                </div>
+                <div class="slider__section">
+                    <img src="img/img3.jpg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">E-commerce</h2>
+                        <p class="slider__txt">Cool summer sale 50% off</p>
+                        <a href="" class="btn-shop">SEE NOW</a>
+                    </div>
+                </div>
+                <div class="slider__section">
+                    <img src="img/img4.jpg" alt="" class="slider__img">
+                    <div class="slider__content">
+                        <h2 class="slider__title">E-commerce</h2>
+                        <p class="slider__txt">100% Quality product</p>
+                        <a href="" class="btn-shop">SEE NOW</a>
                     </div>
                 </div>
             </div>
-            <!--/product_item-->
-            <!--/product-->
-            <p class="u-custom-font u-text u-text-default u-text-palette-1-dark-2 u-text-3 ">Images from <a href="https://www.freepik.com/photos/background " class="u-border-1 u-border-palette-1-base u-btn u-button-style u-none u-text-body-color u-btn-2 ">Freepik</a>
-            </p>
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
         </div>
-    </section>
-    <section class="u-clearfix u-section-2 " id="sec-33bd ">
-        <div class="u-clearfix u-sheet u-sheet-1 ">
-            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1 ">
-                <div class="u-layout ">
-                    <div class="u-layout-row ">
-                        <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1 " data-image-width="400 " data-image-height="265 ">
-                            <div class="u-container-layout u-container-layout-1 "></div>
-                        </div>
-                        <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2 ">
-                            <div class="u-container-layout u-valign-middle u-container-layout-2 ">
-                                <h2 class="u-text u-text-default u-text-1 ">Sample Headline</h2>
-                                <p class="u-text u-text-2 ">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-                            </div>
-                        </div>
-                    </div>
+        <main class="main">
+            
+            <div class="container-editor">
+                <div class="editor__item">
+                    <img src="img/productotop1.jpg" alt="" class="editor__img">
+                    <p class="editor__circle">TOP PRODUCTS</p>
+                </div>
+                <div class="editor__item">
+                    <img src="img/productotop.jpg" alt="" class="editor__img">
+    <p class="editor__circle">TOP PRODUCTS</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="u-align-center u-clearfix u-image u-shading u-section-3 " src=" " data-image-width="256 " data-image-height="256 " id="sec-e970 ">
-        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1 ">
-            <h1 class="u-text u-text-default u-title u-text-1 ">INTUITIVE</h1>
-            <p class="u-large-text u-text u-text-default u-text-variant u-text-2 ">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
-            <a href="# " class="u-btn u-button-style u-palette-2-base u-btn-1 ">Read More</a>
-        </div>
-    </section>
-
-
-    <footer class="u-clearfix u-footer u-grey-80 " id="sec-16fe ">
-        <div class="u-clearfix u-sheet u-sheet-1 ">
-            <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1 ">
-                <div class="u-gutter-0 u-layout ">
-                    <div class="u-layout-row ">
-                        <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-size-20-md u-layout-cell-1 ">
-                            <div class="u-container-layout u-container-layout-1 ">
-                                <h6 class="u-custom-font u-heading-font u-text u-text-1 ">Headline</h6>
-                                <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-2 ">
-                                    Sample footer text</p>
-                            </div>
+            <div class="container">
+                <h2 class="main-tittle">Lista de Productos</h2>
+                <section class="container-products">
+                    
+                    <div class="product">
+                        <img src="img/producto.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Farenheit (Grey)</h3>
+                            <span class="producto__price">$575.00</span>
                         </div>
-                        <div class="u-align-left u-container-style u-layout-cell u-size-20 u-size-20-md u-layout-cell-2 ">
-                            <div class="u-container-layout u-container-layout-2 ">
-                                <h6 class="u-custom-font u-heading-font u-text u-text-3 ">Headline</h6>
-                                <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-4 ">
-                                    Sample footer text</p>
-                            </div>
-                        </div>
-                        <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-20 u-size-20-md u-layout-cell-3 ">
-                            <div class="u-container-layout u-container-layout-3 ">
-                                <h6 class="u-custom-font u-heading-font u-text u-text-5 ">Headline</h6>
-                                <p class="u-align-left-lg u-align-left-md u-small-text u-text u-text-variant u-text-6 ">
-                                    Sample footer text</p>
-                            </div>
-                        </div>
+                        <form>
+                        <p class="heart"> 
+                          <input id="heart1" type="radio" name="heart" value="5"><label for="heart1"><i class="far fa-heart"></i></label>
+                        </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio1">★</label><!--
+                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio2">★</label><!--
+                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio3">★</label><!--
+                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio4">★</label><!--
+                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio5">★</label>
+                            </p>
+                          </form>
+                          
                     </div>
-                </div>
-            </div>
-            <div class="u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-50 u-line-1 ">
-            </div>
-            <div class="u-social-icons u-spacing-10 u-social-icons-1 ">
-                <a class="u-social-url " title="facebook " target="_blank " href=" "><span
-                        class="u-icon u-social-facebook u-social-icon u-icon-1 "><svg class="u-svg-link "
-                            preserveAspectRatio="xMidYMin slice " viewBox="0 0 112 112 " style="
-        ">
-                            <use xlink:href="#svg-9b4f "></use>
-                        </svg><svg class="u-svg-content " viewBox="0 0 112 112 " x="0 " y="0 " id="svg-9b4f ">
-                            <circle fill="currentColor " cx="56.1 " cy="56.1 " r="55 "></circle>
-                            <path fill="#FFFFFF " d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
-        c0-6.7,3.1-17,17-17h12.5v13.9H73.5z "></path>
-                        </svg></span>
-                </a>
-                <a class="u-social-url " title="twitter " target="_blank " href=" "><span
-                        class="u-icon u-social-icon u-social-twitter u-icon-2 "><svg class="u-svg-link "
-                            preserveAspectRatio="xMidYMin slice " viewBox="0 0 112 112 " style="
-        ">
-                            <use xlink:href="#svg-6938 "></use>
-                        </svg><svg class="u-svg-content " viewBox="0 0 112 112 " x="0 " y="0 " id="svg-6938 ">
-                            <circle fill="currentColor " class="st0 " cx="56.1 " cy="56.1 " r="55 "></circle>
-                            <path fill="#FFFFFF " d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
-        c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1 c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14 c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
-        c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z "></path>
-                        </svg></span>
-                </a>
-                <a class="u-social-url " title="instagram " target="_blank " href=" "><span
-                        class="u-icon u-social-icon u-social-instagram u-icon-3 "><svg class="u-svg-link "
-                            preserveAspectRatio="xMidYMin slice " viewBox="0 0 112 112 " style="
-        ">
-                            <use xlink:href="#svg-4e0d "></use>
-                        </svg><svg class="u-svg-content " viewBox="0 0 112 112 " x="0 " y="0 " id="svg-4e0d ">
-                            <circle fill="currentColor " cx="56.1 " cy="56.1 " r="55 "></circle>
-                            <path fill="#FFFFFF "
-                                d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
-        z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z ">
-                            </path>
-                            <path fill="#FFFFFF " d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z
-        "></path>
-                            <path fill="#FFFFFF "
-                                d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8 C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5 c5.5,0,9.9,4.5,9.9,9.9V73.3z ">
-                            </path>
-                        </svg></span>
-                </a>
-                <a class="u-social-url " title="linkedin " target="_blank " href=" "><span
-                        class="u-icon u-social-icon u-social-linkedin u-icon-4 "><svg class="u-svg-link "
-                            preserveAspectRatio="xMidYMin slice " viewBox="0 0 112 112 " style="
-        ">
-                            <use xlink:href="#svg-6bd1 "></use>
-                        </svg><svg class="u-svg-content " viewBox="0 0 112 112 " x="0 " y="0 " id="svg-6bd1 ">
-                            <circle fill="currentColor " cx="56.1 " cy="56.1 " r="55 "></circle>
-                            <path fill="#FFFFFF "
-                                d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
-        C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5 H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z ">
-                            </path>
-                        </svg></span>
-                </a>
-            </div>
-            <a href="https://nicepage.com " class="u-image u-logo u-image-1 " data-image-width="80 " data-image-height="40 ">
-                <img src="{{ url_for( 'static', filename='img/default-logo.png')}} " class="u-logo-image u-logo-image-1 ">
-            </a>
-        </div>
-    </footer>
-    <section class="u-backlink u-clearfix u-grey-80 ">
-        <a class="u-link " href="https://nicepage.com/website-templates " target="_blank ">
-            <span>Website Templates</span>
-        </a>
-        <p class="u-text ">
-            <span>created with</span>
-        </p>
-        <a class="u-link " href="https://nicepage.com/ " target="_blank ">
-            <span>Website Builder Software</span>
-        </a>.
-    </section>
-</body>
+                    <div class="product">
+                        <img src="img/producto1.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$56.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart2" type="radio" name="heart" value="5"><label for="heart2"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio6" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio6">★</label><!--
+                              --><input id="radio7" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio7">★</label><!--
+                              --><input id="radio8" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio8">★</label><!--
+                              --><input id="radio9" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio9">★</label><!--
+                              --><input id="radio10" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio10">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto20.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$34.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart3" type="radio" name="heart" value="5"><label for="heart3"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio11" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio11">★</label><!--
+                              --><input id="radio12" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio12">★</label><!--
+                              --><input id="radio13" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio13">★</label><!--
+                              --><input id="radio14" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio14">★</label><!--
+                              --><input id="radio15" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio15">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto3.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$70.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart4" type="radio" name="heart" value="5"><label for="heart4"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio16" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio16">★</label><!--
+                              --><input id="radio17" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio17">★</label><!--
+                              --><input id="radio18" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio18">★</label><!--
+                              --><input id="radio19" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio19">★</label><!--
+                              --><input id="radio20" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio20">★</label>
+                            </p>
+                          </form>
+                    </div> 
+                </section>
 
+                <section class="container__testimonials">
+                    </section>
+
+                <section class="container-products">
+                        <div class="product">
+                        <img src="img/producto4.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Farenheit (Grey)</h3>
+                            <span class="producto__price">$575.00</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart5" type="radio" name="heart" value="5"><label for="heart5"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio21" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio21">★</label><!--
+                              --><input id="radio22" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio22">★</label><!--
+                              --><input id="radio23" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio23">★</label><!--
+                              --><input id="radio24" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio24">★</label><!--
+                              --><input id="radio25" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio25">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto5.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$56.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart6" type="radio" name="heart" value="5"><label for="heart6"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio26" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio26">★</label><!--
+                              --><input id="radio27" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio27">★</label><!--
+                              --><input id="radio28" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio28">★</label><!--
+                              --><input id="radio29" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio29">★</label><!--
+                              --><input id="radio30" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio30">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto19.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$34.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart7" type="radio" name="heart" value="5"><label for="heart7"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio31" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio31">★</label><!--
+                              --><input id="radio32" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio32">★</label><!--
+                              --><input id="radio33" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio33">★</label><!--
+                              --><input id="radio34" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio34">★</label><!--
+                              --><input id="radio35" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio35">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto7.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$70.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart8" type="radio" name="heart" value="5"><label for="heart8"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio36" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio36">★</label><!--
+                              --><input id="radio37" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio37">★</label><!--
+                              --><input id="radio38" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio38">★</label><!--
+                              --><input id="radio39" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio39">★</label><!--
+                              --><input id="radio40" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio40">★</label>
+                            </p>
+                          </form>
+                    </div> 
+                </section>
+                
+                <section class="container__testimonials">
+                </section>
+                
+                <section class="container-products">
+                    
+                    <div class="product">
+                        <img src="img/producto8.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Farenheit (Grey)</h3>
+                            <span class="producto__price">$575.00</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart9" type="radio" name="heart" value="5"><label for="heart9"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio41" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio41">★</label><!--
+                              --><input id="radio42" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio42">★</label><!--
+                              --><input id="radio43" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio43">★</label><!--
+                              --><input id="radio44" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio44">★</label><!--
+                              --><input id="radio45" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio45">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto9.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$56.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart10" type="radio" name="heart" value="5"><label for="heart10"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio46" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radi46">★</label><!--
+                              --><input id="radio47" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio47">★</label><!--
+                              --><input id="radio48" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio48">★</label><!--
+                              --><input id="radio49" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio49">★</label><!--
+                              --><input id="radio50" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio50">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto10.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$34.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart11" type="radio" name="heart" value="5"><label for="heart11"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio51" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio51">★</label><!--
+                              --><input id="radio52" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio52">★</label><!--
+                              --><input id="radio53" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio53">★</label><!--
+                              --><input id="radio54" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio54">★</label><!--
+                              --><input id="radio55" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio55">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto11.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$70.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart12" type="radio" name="heart" value="5"><label for="heart12"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio56" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio56">★</label><!--
+                              --><input id="radio57" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio57">★</label><!--
+                              --><input id="radio58" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio58">★</label><!--
+                              --><input id="radio59" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio59">★</label><!--
+                              --><input id="radio60" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio60">★</label>
+                            </p>
+                          </form>
+                    </div> 
+                </section>
+                <section class="container__testimonials">
+                </section>
+                <section class="container-products">
+                    
+                    <div class="product">
+                        <img src="img/producto12.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Farenheit (Grey)</h3>
+                            <span class="producto__price">$575.00</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart13" type="radio" name="heart" value="5"><label for="heart13"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio61" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio61">★</label><!--
+                              --><input id="radio62" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio62">★</label><!--
+                              --><input id="radio63" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio63">★</label><!--
+                              --><input id="radio64" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio64">★</label><!--
+                              --><input id="radio65" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio65">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto13.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$56.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart14" type="radio" name="heart" value="5"><label for="heart14"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio66" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio66">★</label><!--
+                              --><input id="radio67" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio67">★</label><!--
+                              --><input id="radio68" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio68">★</label><!--
+                              --><input id="radio69" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio69">★</label><!--
+                              --><input id="radio70" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio70">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto14.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$34.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart15" type="radio" name="heart" value="5"><label for="heart15"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio71" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio71">★</label><!--
+                              --><input id="radio72" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio72">★</label><!--
+                              --><input id="radio73" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio73">★</label><!--
+                              --><input id="radio74" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio74">★</label><!--
+                              --><input id="radio75" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio75">★</label>
+                            </p>
+                          </form>
+                    </div>
+                    <div class="product">
+                        <img src="img/producto15.jpg" alt="" class="product__img">
+                        <div class="product__desciption">
+                            <h3 class="product__title">Titulo</h3>
+                            <span class="producto__price">$70.000</span>
+                        </div>
+                        <form>
+                          <p class="heart"> 
+                            <input id="heart16" type="radio" name="heart" value="5"><label for="heart16"><i class="far fa-heart"></i></label>
+                          </form>
+                        <form>
+                            <p class="clasificacion">
+                              <input id="radio76" type="radio" name="estrellas" value="5"><!--
+                              --><label for="radio76">★</label><!--
+                              --><input id="radio77" type="radio" name="estrellas" value="4"><!--
+                              --><label for="radio77">★</label><!--
+                              --><input id="radio78" type="radio" name="estrellas" value="3"><!--
+                              --><label for="radio78">★</label><!--
+                              --><input id="radio79" type="radio" name="estrellas" value="2"><!--
+                              --><label for="radio79">★</label><!--
+                              --><input id="radio80" type="radio" name="estrellas" value="1"><!--
+                              --><label for="radio80">★</label>
+                            </p>
+                          </form>
+                    </div> 
+                </section>
+
+                
+                    
+                    <section class="container-tips">
+                        <div class="tip">
+                          <i class="far fa-hand-paper"></i> 
+                          <h2 class="tip__title">Satisfaction Guaranteed</h2>
+                          <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit</p>
+                          <a href="" class="btn-shop">SEE NOW</a>
+                        </div>
+                        <div class="tip">
+                         <i class="fas fa-rocket"></i>
+                          <h2 class="tip__title">Fast Shipping</h2>
+                          <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                          <a href="" class="btn-shop">SEE NOW</a>
+                        </div>
+                        <div class="tip">
+                          <i class="fas fa-cog"></i>
+                          <h2 class="tip__title">UV Protection</h2>
+                          <p class="tip__txt">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                          <a href="" class="btn-shop">SEE NOW</a>
+                        </div>
+                      </section>
+                    </div>
+                  </main>
+                  <footer class="main-footer">
+                    <div class="footer__section">
+                      <h2 class="footer__title">About Us</h2>
+                      <p class="footer__txt">Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+                    </div>
+                    <div class="footer__section">
+                      <h2 class="footer__title">Location :</h2>
+                      <p class="footer__txt">0926k 4th block building, king Avenue, New York City</p>
+                      <h2 class="footer__title">Contact</h2>
+                      <p class="footer__txt">Phone : +121 098 8907 9987</p>
+                      <p class="footer__txt">Email : info@example.com</p>
+                    </div>
+                    <div class="footer__section">
+                      <h2 class="footer__title">Quick Links</h2>
+                      <a href="" class="footer__link">Productos</a>
+                      <a href="" class="footer__link">Lista de Deseos</a>
+                      <a href="" class="footer__link">Soporte</a>
+                      <a href="" class="footer__link">Contáctenos</a>
+                      <a href="" class="footer__link">Mi cuenta</a>
+                    </div>
+                    <div class="footer__section">
+                      <h2 class="footer__title">Sign up for Product Update</h2>
+                      <p class="footer__txt">By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                      <input type="email" class="footer__input" placeholder="Enter your email">
+                    </div>
+                    <p class="copy">© 2021 Goggles. All Rights Reserved | Design by </p>
+                  </footer>
+            </div>
+        </main>
+
+        <script src="js/slider.js"></script>
+    </body>
 </html>

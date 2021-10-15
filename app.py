@@ -30,5 +30,9 @@ def listaproductos():
 def listad():
    return render_template('Lista-de-deseos.html')
 
+@app.route('/addProducto')
+def addProduct():
+   return render_template('addProducto.html')
+
 if __name__ == '__main__':
    app.run(debug=True ,port=8080) #se encarga de ejecutar el servidor 5000

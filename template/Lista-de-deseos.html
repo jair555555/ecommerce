@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title></title>
+	    <link rel="stylesheet " href="{{ url_for('static', filename='css/estilos.css')}}" media="screen " type="text/css">
     <link rel="stylesheet" href="{{ url_for( 'static', filename='css/nicepage.css')}}" media="screen">
     <script class="u-script" type="text/javascript" src="//static.nicepage.com/shared/assets/jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="//capp.nicepage.com/dc06bf325af4de98f634af6549d107114cf3123b/nicepage.js" defer=""></script>
@@ -17,8 +18,36 @@
 <body class="u-body" data-style="shopping-cart-template-1" data-posts="" data-global-section-properties="{&quot;code&quot;:&quot;CART&quot;,&quot;colorings&quot;:{&quot;light&quot;:[&quot;clean&quot;,&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;],&quot;dark&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;]},&quot;isPreset&quot;:true}"
     data-source="fix" data-page-sections-style="[{&quot;name&quot;:&quot;shopping-cart-1&quot;,&quot;margin&quot;:&quot;both&quot;,&quot;repeat&quot;:false}]" data-page-coloring-types="{&quot;light&quot;:[&quot;clean&quot;,&quot;clean&quot;],&quot;colored&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;],&quot;dark&quot;:[&quot;clean&quot;,&quot;clean&quot;,&quot;clean&quot;]}"
     data-page-category="&quot;Cart&quot;">
-    <section class="u-clearfix u-block-9749-1" custom-posts-hash="[T,[T,T],[[[I,T],[I,T],[I,T]],[],[],[]]]" data-section-properties="{&quot;margin&quot;:&quot;both&quot;,&quot;stretch&quot;:true}" data-id="9749" data-style="shopping-cart-1" id="sec-59be">
-        <div class="u-clearfix u-sheet u-block-9749-2">
+            <header class="main-header">
+            <div class="container container--flex">
+                <div class="main-header__container">
+                    <h1 class="main-header__title">ECOMMERCE</h1>
+                    <span class="icon-menu " id="btn-menu"><i class="fas fa-bars"></i></span>
+                    <nav class="main-nav" id="main-nav">
+                        <ul class="menu">
+                            <li class="menu__item"><a href="AñadirProducto.html" class="menu__link">PRODUCTOS</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">LISTA DE DESEOS</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">SOPORTE</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">CONTÁCTENOS</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">MI CUENTA</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-header__container">
+                    <span class="main-header__txt">Need Help</span>
+                    <p class="main-header__txt"><i class="fas fa-phone"></i> Call 123456789</p>
+                </div> 
+                <div class="main-header__container"> 
+                    <input type="search" class="main-header__input" placeholder="Buscar producto"><i class="fas fa-search"></i>
+                </div>
+            </div>
+        </header>
+	
+	
+	
+	<section class="u-clearfix u-block-9749-1" custom-posts-hash="[T,[T,T],[[[I,T],[I,T],[I,T]],[],[],[]]]" data-section-properties="{&quot;margin&quot;:&quot;both&quot;,&quot;stretch&quot;:true}" data-id="9749" data-style="shopping-cart-1" id="sec-59be">
+{% extends "index.html" %}        
+	   <div class="u-clearfix u-sheet u-block-9749-2">
             <div class="u-cart u-block-9749-6">
                 <div class="u-cart-products-table u-table u-table-responsive u-block-9749-7">
                     <div class="hidden u-border-1 u-border-grey-dark-1 u-first-col-div u-block-9749-91"></div>
@@ -305,6 +334,33 @@
                 </div>
             </div>
         </div>
+		 <footer class="main-footer">
+                    <div class="footer__section">
+                      <h2 class="footer__title">About Us</h2>
+                      <p class="footer__txt">Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+                    </div>
+                    <div class="footer__section">
+                      <h2 class="footer__title">Location :</h2>
+                      <p class="footer__txt">0926k 4th block building, king Avenue, New York City</p>
+                      <h2 class="footer__title">Contact</h2>
+                      <p class="footer__txt">Phone : +121 098 8907 9987</p>
+                      <p class="footer__txt">Email : info@example.com</p>
+                    </div>
+                    <div class="footer__section">
+                      <h2 class="footer__title">Quick Links</h2>
+                      <a href="" class="footer__link">Productos</a>
+                      <a href="" class="footer__link">Lista de Deseos</a>
+                      <a href="" class="footer__link">Soporte</a>
+                      <a href="" class="footer__link">Contáctenos</a>
+                      <a href="" class="footer__link">Mi cuenta</a>
+                    </div>
+                    <div class="footer__section">
+                      <h2 class="footer__title">Sign up for Product Update</h2>
+                      <p class="footer__txt">By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                      <input type="email" class="footer__input" placeholder="Enter your email">
+                    </div>
+                    <p class="copy">© 2021 Goggles. All Rights Reserved | Design by </p>
+                  </footer>
         <style data-mode="XL">
             @media (min-width: 1200px) {
                 .u-block-9749-2 {
